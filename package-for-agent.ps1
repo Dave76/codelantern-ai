@@ -55,8 +55,8 @@ try {
     $filesToZip =
         Get-ChildItem -Path . -Recurse -File -Force |
         Where-Object {
-            $_.FullName -notmatch '\\.git(\\|$)' -and
-            $_.FullName -notmatch '\\_ai_packages(\\|$)' -and
+            $_.FullName -notmatch '[\\\/]\.git([\\\/]|$)' -and
+            $_.FullName -notmatch '[\\\/]_ai_packages([\\\/]|$)' -and
             $_.FullName -ne $zipPath
         }
 
@@ -72,4 +72,3 @@ try {
 finally {
     Pop-Location
 }
-
