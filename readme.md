@@ -45,7 +45,7 @@ We help clients streamline and optimize every phase — from ideation to coding,
 - Governance, security, and adoption playbooks  
 - Productivity metrics and ROI dashboards  
 
-📄 See [`ai-augment-dev-pricing.md`](./docs/pricing/ai-augment-dev-pricing.md) for detailed pricing and engagement structure.  
+📄 See [`a2d-pricing.md`](./pricing/a2d-pricing.md) for detailed pricing and engagement structure.  
 
 ---
 
