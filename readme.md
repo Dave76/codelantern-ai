@@ -1,113 +1,79 @@
 # CodeLantern.AI  
-
-**Illuminating the Future of Software Development**  
-
----
-
-## 🌟 Overview
-
-**CodeLantern.AI** represents the next evolution in software engineering methodology — the era of **AI-Augmented Development (A2D)**.  
-
-From **Waterfall → Agile → AI-Augmented Development**, we are witnessing a paradigm shift.  
-Where Agile optimized *human collaboration*, **A2D** optimizes *human–AI collaboration*.  
-
-With a properly configured set of agents, teams can:  
-
-- Plan work in the morning  
-- Have AI agents implement and test throughout the day  
-- Review and deploy to test environments by afternoon  
-
-What once took a full sprint can now be accomplished in a single day.  
+**AI‑Augmented Development (A2D): Beyond Agile**
 
 ---
 
-## 🚀 Our Mission
+## Overview
 
-To enable development teams to **embrace AI as a first-class participant** in their software delivery lifecycle.  
-We help clients streamline and optimize every phase — from ideation to coding, reviewing, deploying, and operating — using intelligent agents, copilots, and modern engineering frameworks.  
+**CodeLantern.AI** is the origin and steward of the **A2D Framework** — a practical methodology for teams to collaborate with intelligent agents across the SDLC. Where Agile optimized human collaboration, **A2D** optimizes human‑AI collaboration.
 
----
+With a properly configured set of agents, teams can:
+- Plan work in the morning
+- Have agents implement and test during the day
+- Review and deploy to test by afternoon
 
-## 🧭 Phase 1 — *AI-Augmented Development (A2D Framework)*
-
-**Objective:** Establish the foundation for AI-Augmented Development — a methodology and operational model that embeds AI deeply into the daily developer workflow.  
-
-**Key Components**
-
-- **Kickstart Engagement** — a 10-day fixed-price onboarding to establish A2D foundations  
-- **Sustain & Evolve Subscription** — continuous enablement, workflow optimization, and on-demand support  
-- **Embedded Coach Program** — named AI coach integrated into client workflows  
-
-**Outcomes**
-
-- A2D-ready workflows integrating GitHub Copilot & Microsoft Agent Framework  
-- Defined agent archetypes (developer, reviewer, product owner, QA)  
-- Governance, security, and adoption playbooks  
-- Productivity metrics and ROI dashboards  
-
-📄 See [`a2d-pricing.md`](./pricing/a2d-pricing.md) for detailed pricing and engagement structure.  
+What once took a sprint can fit in a day.
 
 ---
 
-## 💡 Phase 2 — *Applied AI Problem Solving*
+## What Is A2D?
 
-Once a client’s A2D foundation is in place, CodeLantern.AI consultants apply the framework to **solve real business problems** — leveraging our own methodology to deliver end-to-end AI solutions.  
+A2D is both a methodology and a service model for integrating AI agents into daily delivery:
+- Methodology: principles, archetypes, and patterns for human‑AI teamwork.
+- Service Model: enablement, coaching, and continuous evolution.
 
-**Examples**
-
-- Develop domain-specific copilots and autonomous agents  
-- Automate business processes and product workflows  
-- Integrate Microsoft AI Foundry and Agent Framework solutions  
-- Deliver intelligent applications faster, cheaper, and smarter  
+For principles and core assets, see `a2d/a2d-framework-overview.md`.
 
 ---
 
-## 🧩 The A2D Advantage
+## Phases
 
-1. **Enablement** — Equip teams to use AI effectively in daily development  
-2. **Augmentation** — Blend human creativity with machine efficiency  
-3. **Application** — Use A2D principles to deliver real business outcomes  
+### Phase 1 — A2D Framework Enablement
+Establish foundations for AI‑augmented delivery within your environment.
+- Kickstart Engagement (10 days)
+- Sustain & Evolve Subscription (ongoing)
+- Embedded Coach Program (named coach in‑workflow)
 
-A2D isn’t just a process — it’s a cultural and operational transformation in how software gets built.  
+Outcomes include archetypes, agent definitions, governance, and measurable ROI. See pricing: `business-model/a2d-pricing.md`.
 
----
-
-## 🧑‍💻 Who We Work With
-
-- Development teams adopting GitHub Copilot or AI Foundry  
-- Product companies seeking to modernize their delivery model  
-- Enterprises investing in AI-driven engineering transformation  
-
----
-
-## 🤝 Contributing
-
-This repository contains frameworks, templates, and documentation for the **CodeLantern.AI** initiative.  
-
-**To contribute:**
-
-1. Fork this repository  
-2. Create a feature branch (`feature/<name>`)  
-3. Submit a pull request with a detailed description  
+### Phase 2 - Applied AI Problem Solving
+CodeLantern consultants use our own A2D practice to rapidly deliver outcomes for clients that may not have an A2D-capable team yet:
+- Rapid development of production features, services, and integrations
+- Outcome-first delivery using A2D archetypes, tests, and governance
+- Agentic components where valuable, but not required
+- Ideal for teams needing results now while their A2D capability grows
 
 ---
 
-## 📅 Roadmap
+## The A2D Advantage
+1. Enablement — Teams skilled at daily AI collaboration
+2. Augmentation — Human creativity + machine efficiency
+3. Application — Measurable business outcomes, not just output
 
-| Phase | Focus | Status |
-|--------|--------|--------|
-| **Phase 1 — AI-Augmented Development (A2D)** | Rollout of the A2D Framework | 🚧 In Progress |
-| **Phase 2 — Applied AI Problem Solving** | Using A2D to solve client challenges | 🔜 Planned |
-| **Phase 3 — AI Productization** | Building reusable agent frameworks and accelerators | ⏳ Exploration |
-
----
-
-## 🏷️ License
-
-All content © 2025 TechLantern / CodeLantern.AI.  
-For internal use and approved partner engagements only.  
+A2D blends speed with security, compliance, and maintainability.
 
 ---
 
-**Version:** 1.0  
+## Contributing
+This repo contains the A2D framework, templates, and artifacts.
+- Fork the repo
+- Create a feature branch (`feature/<name>`)
+- Open a PR with a clear description
+
+---
+
+## Docs Index
+- Framework Overview: `a2d/a2d-framework-overview.md`
+- A2D vs. Vibe Coding: `a2d/a2d-vs-vibe-coding.md`
+- Pricing (canonical): `business-model/a2d-pricing.md`
+- Framework + Pricing (HTML): `artifacts/CodeLantern-A2D-Framework-and-Pricing.html`
+
+---
+
+## License
+All content c 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
+
+---
+
+**Version:** 2.0  
 **Last Updated:** November 2025  

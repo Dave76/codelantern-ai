@@ -1,98 +1,121 @@
-# A2D (AI Augmented Development) Program
-
-**Powered by GitHub Copilot & Microsoft Agent Framework**
-
-A structured, hybrid engagement model designed to help development teams accelerate adoption of AI-assisted workflows, increase productivity, and reduce dependency on offshore delivery.
+# CodeLantern.AI - A2D Framework Pricing  
+**Adoption, Enablement, and Continuous Evolution**
 
 ---
 
-## 1. Kickstart Engagement — “A2D Jumpstart”
+## ?? Overview
+
+The **AI-Augmented Development (A2D) Framework** represents a fundamental evolution in how software is built - where intelligent agents and human developers collaborate to deliver at a new level of speed, quality, and efficiency.
+
+To help organizations adopt, master, and continuously evolve their A2D practice, **CodeLantern.AI** provides a structured engagement model with clear phases, pricing, and outcomes.
+
+---
+
+## ?? Engagement Model
+
+We deliver A2D through three complementary offerings - designed to scale from initial adoption to long-term optimization.
+
+| Offering | Description | Typical Duration | Price |
+|-----------|--------------|------------------|--------|
+| **Kickstart Engagement** | Fixed-price onboarding to implement A2D foundations, tooling, agent definitions, and workflow enablement. | 10 business days | **$12,000 - $15,000** |
+| **Sustain & Evolve Subscription** | Ongoing enablement, workflow tuning, curated updates to Archetypes & Agents, and virtual support. | Monthly | **$1,000 - $2,000 / month** |
+| **Embedded Coach Program** | Dedicated A2D expert embedded within the client's team to accelerate adoption and culture change. | 3 - 6 months | **$20,000 - $25,000 / month** |
+
+---
+
+## ?? Kickstart Engagement - *"A2D Jumpstart"*
 
 **Duration:** 10 business days  
-**Goal:** Establish the foundation for AI-augmented development — tooling, agent definitions, workflow archetypes, and change-management strategy.  
-**Led by:** Certified AI Augmentation Consultant  
+**Goal:** Establish the foundation for AI-Augmented Development within the client's environment.  
 
 | Tier | Target Client | Description | Price |
-|------|----------------|--------------|--------|
-| **Professional (Org)** | GitHub Organization (SMB teams, 10–50 devs) | Standard onboarding and workflow definition | **$12,000** |
-| **Enterprise** | GitHub Enterprise (medium–large orgs, 50+ devs) | Includes governance, data residency, and advanced workflow architecture | **$15,000** |
+|------|----------------|-------------|--------|
+| **Professional (Org)** | GitHub Organization (SMB - Mid teams) | Standard A2D onboarding and workflow definition. | **$12,000** |
+| **Enterprise** | GitHub Enterprise (larger teams / governance needs) | Includes enterprise governance, data residency, and advanced workflow architecture. | **$15,000** |
 
-### Deliverables
-
-- Copilot enablement plan (personal, org, enterprise)
-- Agent archetype definition (developer, reviewer, product owner)
-- Pilot project setup with measurable KPIs
-- Change-management and adoption playbook
-- Optional “embedded coach” proposal
+**Deliverables**
+- A2D process design & team readiness assessment  
+- Copilot / Agent Framework enablement plan  
+- Archetype & Agent role definitions  
+- Pilot project setup with KPIs  
+- Change-management and adoption playbook  
 
 ---
 
-## 2. Subscription — “Sustain & Evolve”
+## ?? Sustain & Evolve Subscription
 
-**Goal:** Continuous enablement, workflow optimization, updates, and on-demand consulting support.
+**Goal:** Ensure teams remain aligned with the latest A2D best practices, tools, and archetypes.  
 
 | Plan | Monthly Price | Included Support | Description |
 |------|----------------|-----------------|--------------|
-| **Core** | **$1,000/month** | 4 hours | Guidance, quarterly update briefings, on-demand Q&A |
-| **Plus** | **$2,000/month** | 10 hours | Deep adoption support, updated templates, workflow tuning, mini-training sessions |
-| **Enterprise Extension** | *Custom ($3K–$5K/mo)* | 20+ hours | For multiple teams; includes dedicated technical advisor, Slack/Teams integration |
+| **Core** | **$1,000 / month** | 4 hours | Guidance, quarterly briefings, on-demand Q&A. |
+| **Plus** | **$2,000 / month** | 10 hours | Workflow tuning, template updates, virtual training sessions. |
+| **Enterprise Extension** | *Custom ($3K - $5K / month)* | 20 + hours | Multi-team enablement, dedicated advisor, Slack/Teams integration. |
 
-### Terms
+**Terms**
+- 6-month minimum commitment (12-month term  10 % discount)  
+- Unused hours roll over for one month  
+- Additional hours billed at **$275 / hour**  
 
-- 6-month minimum commitment  
-- Discount for 12-month commitment (10% off)  
-- Unused hours roll over for 1 month  
-- Additional hours billed at $275/hr  
+Subscribers automatically receive:
+- Updated **Archetype Frameworks**  
+- Revised **Agent Definition Libraries**  
+- New **Agent-Friendly Authoring Templates**  
+- Access to exclusive A2D briefings and advisory sessions  
 
 ---
 
-## 3. Embedded Coach — “Path to Success”
+## ?? Embedded Coach Program - *"Path to A2D Mastery"*
 
-**Goal:** Accelerate adoption and institutional learning with a named coach embedded directly within the client’s workflow.
+**Goal:** Accelerate organizational adoption through an on-the-ground expert embedded directly within the client's team.  
 
 | Tier | Description | Monthly Price |
 |------|--------------|----------------|
-| **Organization** | Shared embedded coach (virtual, up to 50% allocation) | **$20,000/month** |
-| **Enterprise** | Dedicated embedded coach (named resource, full allocation) | **$25,000/month** |
+| **Organization** | Shared embedded coach (virtual / 50 % allocation) | **$20,000 / month** |
+| **Enterprise** | Dedicated, named A2D Coach (full allocation) | **$25,000 / month** |
 
-### Includes
-
-- Full access to Sustain & Evolve subscription  
-- Weekly coaching sessions & office hours  
-- Direct collaboration in GitHub Orgs / Teams  
-- Internal enablement content creation  
+**Includes**
+- Full **Sustain & Evolve** subscription  
+- Weekly coaching sessions & retrospectives  
+- Hands-on support for agent integration & archetype adoption  
+- ROI / adoption tracking and executive reporting  
 
 ---
 
-## 4. Optional Add-Ons
+## ?? Add-Ons & Enhancements
 
 | Add-On | Price | Description |
 |---------|--------|-------------|
-| Copilot ROI / Adoption Metrics Dashboard | $2,500 | Measures utilization, productivity impact |
-| Custom Agent Workshop | $5,000 | Build and deploy a simple agent using .NET Agent Framework |
-| Security & Compliance Review | $3,000 | GitHub policy audit, prompt governance |
+| **Copilot ROI Dashboard** | $2,500 | Tracks productivity & adoption metrics for A2D. |
+| **Custom Agent Workshop** | $5,000 | Build & deploy a tailored agent using .NET Agent Framework. |
+| **Security & Governance Review** | $3,000 | Validates GitHub & AI usage policies for A2D compliance. |
 
 ---
 
-## 🧭 Summary Table
+## ?? Engagement Summary
 
-| Phase | Duration | Typical Price Range | Key Deliverables |
-|--------|-----------|----------------------|------------------|
-| Kickstart | 10 days | $12K–$15K | Foundation setup, workflows, archetypes |
-| Sustain & Evolve | Monthly | $1K–$2K | Ongoing updates & support |
-| Embedded Coach | 3–6 months | $20K–$25K/mo | Dedicated AI coach |
-| Add-Ons | — | $2.5K–$5K | Optional enhancements |
-
----
-
-### Notes
-
-- Designed to scale between GitHub **Organization** and **Enterprise** clients.  
-- Engagements delivered by certified **AI Augmentation Consultants** with proven experience in GitHub Copilot and Microsoft Agent Framework.  
-- All pricing in USD.  
-- Travel or on-site delivery (if applicable) billed separately.
+| Phase | Duration | Price Range | Key Deliverables |
+|--------|-----------|--------------|------------------|
+| **Kickstart (A2D Jumpstart)** | 10 days | $12K - $15K | Foundation setup / tooling / workflow |
+| **Sustain & Evolve** | Monthly | $1K - $2K / month | Ongoing optimization & updates |
+| **Embedded Coach** | 3 - 6 months | $20K - $25K / month | Dedicated A2D adoption coach |
+| **Add-Ons** | - | $2.5K - $5K | Optional enhancements & workshops |
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** November 2025
+## ?? Continuous Value
+
+Every subscription ensures clients stay current with:  
+- The evolving **Archetype Framework** (best-practice blueprints)  
+- The **Agent Definition Library** (role-based AI configurations)  
+- Improved **Agent-Friendly Authoring Standards**  
+- Real-world learnings from ongoing A2D engagements  
+
+> *A2D isn't a one-time transformation - it's a continuous partnership between human expertise and intelligent automation.*
+
+---
+
+**Version:** 2.0  
+**Last Updated:** November 2025  
+**Maintained By:** CodeLantern.AI / TechLantern Group  
+
