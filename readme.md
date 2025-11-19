@@ -37,11 +37,12 @@ Establish foundations for AI‑augmented delivery within your environment.
 Outcomes include archetypes, agent definitions, governance, and measurable ROI. See pricing: `business-model/a2d-pricing.md`.
 
 ### Phase 2 - Applied AI Problem Solving
-CodeLantern consultants use our own A2D practice to rapidly deliver outcomes for clients that may not have an A2D-capable team yet:
-- Rapid development of production features, services, and integrations
-- Outcome-first delivery using A2D archetypes, tests, and governance
-- Agentic components where valuable, but not required
-- Ideal for teams needing results now while their A2D capability grows
+
+While Phase 1 helps clients **adopt** AI-augmented practices, Phase 2 exists for organizations that **don’t have internal development teams** — or simply **lack the capacity** to execute on their ideas.
+
+That’s where the **CodeLantern Delivery Team** comes in.
+
+We offer a team of **A2D-certified consultants** who specialize in taking a product owner’s idea from vision to production — quickly, securely, and transparently.
 
 ---
 
