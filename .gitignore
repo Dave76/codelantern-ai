@@ -1,1 +1,4 @@
 _ai_packages/
+
+# Temporary PowerPoint files
+~*.pptx
