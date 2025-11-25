@@ -76,5 +76,14 @@ All content c 2025 TechLantern / CodeLantern.AI. For internal use and approved p
 
 ---
 
+## TODO
+
+- [] Workflows
+  - [] Iterate: Code, review, iterate, debug (using the agents locally for more rapid iteration on a PR)
+  - [] Suggestion: Use agent to suggest what should be done next
+  - [] Planning: Use the `planner` to write a more complex user story (from chat interface)
+  - [] Design: Use the the `ux-designer` to design a screen component (this will need to be mocked up)
+
+
 **Version:** 2.0  
 **Last Updated:** November 2025  
