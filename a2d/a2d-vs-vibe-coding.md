@@ -131,3 +131,5 @@ Minimal AI ──┬─────────────┬──────
 **Version:** 1.0  
 **Last Updated:** November 2025  
 **Maintained by:** CodeLantern.AI / TechLantern Group
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

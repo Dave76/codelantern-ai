@@ -111,3 +111,7 @@ tools: [
 - **Methods** provide different operations within a single tool (when applicable)
 - Not all tools have methods - some perform a single, specific operation
 - Tool names in agent definitions use the format: `<server-name>-mcp-server/<tool-name>`
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

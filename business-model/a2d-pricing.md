@@ -117,5 +117,7 @@ Every subscription ensures clients stay current with:
 
 **Version:** 2.0  
 **Last Updated:** November 2025  
-**Maintained By:** CodeLantern.AI / TechLantern Group  
+**Maintained By:** CodeLantern.AI / TechLantern Group
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
 

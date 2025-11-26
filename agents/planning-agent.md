@@ -50,3 +50,7 @@ You are a **planning specialist**. You DO NOT write code. You read the current i
 
 ## Notes for Execution
 - Labels, reviewers, environments, feature flagging (if relevant)
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

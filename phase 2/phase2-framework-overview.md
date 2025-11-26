@@ -108,4 +108,4 @@ Each CodeLantern engagement reinforces the A2D philosophy:
 
 ---
 
-© 2025 CodeLantern | Part of the TechLantern Group
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

@@ -295,4 +295,4 @@ sequenceDiagram
 
 ---
 
-Copyright  CodeLantern 2025
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
