@@ -48,6 +48,17 @@ The repository may incorporate tools for generating websites and slide decks fro
 - Use bullet lists for unordered items
 - End with version information and copyright where appropriate
 
+### Copyright Notice
+- All markdown files should include a copyright notice at the bottom
+- Standard format: `---` (horizontal rule) followed by a blank line, then the copyright text
+- Copyright text: `© 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.`
+- Example:
+  ```markdown
+  ---
+
+  © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
+  ```
+
 ## Terminology
 
 - **A2D** – AI-Augmented Development
