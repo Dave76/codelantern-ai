@@ -1,0 +1,79 @@
+---
+title: "CodeLantern"
+subtitle: "CodeLantern the company, the brand, the product"
+author: "David Judd"
+date: "November 2025"
+format: revealjs
+---
+
+## CodeLantern {.title-slide}
+
+Transforming software development through AI-augmented collaboration.
+
+::: {.incremental}
+- **Professional services** delivering A2D enablement
+- **Proprietary tools & methodology** as our competitive advantage
+- **Empower development teams** to achieve 10x velocity with human control
+- **Solve business problems** for organizations lacking dev resources
+:::
+
+::: {.notes}
+**Opening remarks:**
+- CodeLantern is pioneering the A2D (AI-Augmented Development) space
+- We're not replacing developers - we're amplifying their capabilities through structured human-AI collaboration
+- Our business model has two revenue streams: enablement services (teaching teams our methodology) and delivery services (using our methodology to build solutions)
+- Key differentiator: we've developed proprietary archetypes (best-practice blueprints) and agents that execute these playbooks
+- The "human control" aspect is critical - we maintain guardrails that prevent agents from making unchecked decisions
+- Target market includes both tech companies wanting to accelerate development and non-tech companies needing development capabilities
+:::
+
+---
+
+## Brand Identity
+
+:::: {.columns}
+
+::: {.column width="40%"}
+::: {.r-stack}
+![](../../src/images/codelantern-logo-01.png){.fragment .fade-in-then-out fragment-index=1}
+
+![](../../src/images/codelantern-logo-02.png){.fragment .fade-in-then-out fragment-index=2}
+
+![](../../src/images/codelantern-logo-03.png){.fragment .fade-in-then-out fragment-index=3}
+
+![](../../src/images/codelantern-logo-04.png){.fragment .fade-in fragment-index=4}
+:::
+:::
+
+::: {.column width="60%"}
+::: {.fragment fragment-index=1}
+- **Illuminating the path** through AI-augmented development
+:::
+
+::: {.fragment fragment-index=2}
+- **Guiding light** for teams navigating the complexity of AI collaboration
+:::
+
+::: {.fragment fragment-index=3}
+- **Trusted beacon** in the evolving landscape of software development
+:::
+
+::: {.fragment fragment-index=4}
+- **Expert partnership** combining methodology, tools, and proven results
+:::
+:::
+
+::::
+
+::: {.notes}
+**Brand positioning:**
+- The "lantern" metaphor represents guidance, clarity, and illumination in a complex space
+- We're not selling hype - we're providing practical, proven methodology
+- Brand values: pragmatism, transparency, human-centricity, excellence
+- Visual identity emphasizes professionalism and technical credibility
+- We position ourselves as thought leaders and practitioners, not just consultants
+:::
+
+---
+
+© 2025 CodeLantern.AI
