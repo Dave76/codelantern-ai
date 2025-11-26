@@ -15,37 +15,20 @@ This document describes the **A2D planning workflow** for the `codelantern-plann
 
 1. User opens a new chat session in GitHub.  
 1. User selects the `codelantern-planner` agent.  
-1. User describes the initiative and requests a plan.  
-1. Planner creates a planning branch and opens a draft PR.  
+1. User describes the initiative and asks the planner to create a plan (for example, "Please create a plan for the following…").  
+1. Planner creates a planning branch and opens a draft PR dedicated to analysis and planning (no implementation work yet).  
 1. User can optionally monitor the PR and provide live feedback.  
-1. Planner performs analysis and drafts the plan ending with candidate "next steps".
-1. User approves the plan through PR comments, leaving the PR open.  
-1. Planner creates/updates the main issue, optionally adds sub-issues and attaches the `ai` label.
-1. Workflows trigger on the `ai` label.  
-1. Workflows add issues to the Backlog.  
-1. Planner assigns PR back to the user for final review.  
-1. User and planner iterate on issues and plan summaries.  
-1. User approves the PR; planner merges and closes it.  
-1. Workflows move the Issue into Ready.
-
-### Entry Point 1 – More detailed (we should likely choose either this or the more summarized text)
-
-1. **User opens a new chat session** in the GitHub browser for an A2D-enabled repository.  
-1. **User selects the `codelantern-planner` agent** in the chat interface.  
-1. **User describes the initiative** and asks the planner to create a plan (for example, “Please create a plan for the following…”).  
-1. **Planner creates a planning branch and draft PR** dedicated to analysis and planning (no implementation work yet).  
-1. **User can monitor the PR** by adding comments and feedback as the planner works.  
-1. **Planner performs analysis and drafts the plan** posting the proposed approach and clear candidate “next steps” into the draft PR.  
-1. **User approves the plan** by adding comments to the PR, but does not approve or close the PR. This signals the planner to create structured work items (issues and sub-issues).  
-1. **Planner creates or updates a main GitHub Issue and Sub-issues** as needed, applying the `ai` label to all issues it creates or manages.  
-1. **GitHub workflows trigger on the `ai` label**, automatically adding the issue(s) to the correct Project.  
-1. **Workflows also ensure issues are placed into the Project Backlog** column.  
-1. **Planner assigns the Planning PR back to the user** for final review of the created or updated issues and sub-issues.  
-1. **User and planner iterate on both the plan and the issues**:  
+1. Planner performs analysis and drafts the plan, posting the proposed approach and clear candidate "next steps" into the draft PR.
+1. User approves the plan through PR comments, but does not approve or close the PR. This signals the planner to create structured work items.  
+1. Planner creates/updates the main issue, optionally adds sub-issues and attaches the `ai` label to all issues it creates or manages.
+1. Workflows trigger on the `ai` label, automatically adding the issue(s) to the correct Project.  
+1. Workflows also ensure issues are placed into the Project Backlog column.  
+1. Planner assigns PR back to the user for final review of the created or updated issues and sub-issues.  
+1. User and planner iterate on both the plan and the issues:  
     - User provides feedback via PR comments.  
     - Planner updates the plan text, issue titles, descriptions, and links.  
-1. **User gives final approval** on the Planning PR, which is then merged into `main`, closed, and the planning branch deleted.  
-1. **GitHub workflows move the main issue into the Ready column**, indicating it is ready for development or assignment to the `codelantern-coder` agent.
+1. User gives final approval on the Planning PR, which is then merged into `main`, closed, and the planning branch deleted.  
+1. Workflows move the main issue into the Ready column, indicating it is ready for development or assignment to the `codelantern-coder` agent.
 
 ---
 
@@ -53,9 +36,9 @@ This document describes the **A2D planning workflow** for the `codelantern-plann
 
 EP2‑1. User creates a GitHub Issue with a clear description and adds it to the Project backlog.  
 EP2‑2. User assigns the Issue to Copilot, selects the planner agent, and prompts:  
-> “Please create a plan for this work item (#123).”
+> "Please create a plan for this work item (#123)."
 
-EP2‑3. Planning proceeds exactly from Step 4 of Entry Point 1.
+EP2‑3. Planner creates Planning PR linked to the Issue and proceeds from Step 4 of Entry Point 1.
 
 ---
 
@@ -76,26 +59,26 @@ flowchart TD
 
     G[Planner creates Planning PR<br/>and analyzes request]
     H[Planner drafts plan in PR]
-    HA[Planner asks user to approve plan]
+    I[Planner asks user to approve plan]
 
-    I{User approves draft?}
-    J[User provides feedback on draft plan]
-    K[Planner updates draft]
+    J{User approves draft?}
+    K[User provides feedback on draft plan]
+    L[Planner updates draft]
 
-    L[Planner creates or updates issues<br/>and applies ai label]
-    M[Workflows triggered by ai label]
-    N[Workflows add issues to Project Backlog]
-    O[Planner assigns PR to user<br/>for issue review]
+    M[Planner creates or updates issues<br/>and applies ai label]
+    N[Workflows triggered by ai label]
+    O[Workflows add issues to Project Backlog]
+    P[Planner assigns PR to user<br/>for issue review]
 
-    P{User approves?}
+    Q{User approves?}
 
-    Q[User provides feedback on issue details]
-    R[Planner resolves issue feedback]
+    R[User provides feedback on issue details]
+    S[Planner resolves issue feedback]
 
-    S[Planning PR approved, merged, closed]
+    T[Planning PR approved, merged, closed]
 
-    T[Workflow moves main issue to Ready]
-    U[End]
+    U[Workflow moves main issue to Ready]
+    V[End]
 
     A --> B
     B -->|Entry 1| C
@@ -108,37 +91,37 @@ flowchart TD
     F --> G
 
     G --> H
-    H --> HA
-    HA --> I
+    H --> I
+    I --> J
 
-    I -->|No| J
-    J --> K
-    K --> H
+    J -->|No| K
+    K --> L
+    L --> H
 
-    I -->|Yes| L
+    J -->|Yes| M
 
-    L --> M
     M --> N
-
     N --> O
+
     O --> P
+    P --> Q
 
-    P -->|No| Q
-    Q --> R
-    R --> O
+    Q -->|No| R
+    R --> S
+    S --> P
 
-    P -->|Yes| S
+    Q -->|Yes| T
 
-    S --> T
     T --> U
+    U --> V
 
     classDef human fill:#d1f7c4,stroke:#3c8c3c,color:#000;
     classDef ai fill:#cfe2ff,stroke:#4d7bd9,color:#000;
     classDef automation fill:#ffe8a1,stroke:#d1a000,color:#000;
 
-    class C,E,D,F,I,J,P,Q,S human;
-    class G,H,HA,K,O,L,R ai;
-    class M,N,T automation;
+    class C,E,D,F,J,K,Q,R,T human;
+    class G,H,I,L,P,M,S ai;
+    class N,O,U automation;
 ```
 
 ---
@@ -198,10 +181,10 @@ sequenceDiagram
     participant WF as Workflow
 
     US->>IS: EP2‑1 - Create Issue with clear description
-    US->>PJ: Add Issue to Project Backlog
-    US->>AI: EP2‑3 - Assign Issue and request plan
+    US->>PJ: EP2‑1 - Add Issue to Project Backlog
+    US->>AI: EP2‑2 - Assign Issue and request plan
 
-    AI->>PR: EP2‑4 - Create Planning PR linked to Issue
+    AI->>PR: EP2‑3 - Create Planning PR linked to Issue
     AI->>PR: Post analysis and draft plan
 
     US->>PR: Optionally monitor PR
