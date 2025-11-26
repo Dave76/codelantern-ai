@@ -1,64 +1,131 @@
 # Copilot Instructions
 
-This repository contains the **A2D (AI-Augmented Development) Framework** documentation and related assets maintained by **CodeLantern.AI**.
+This repository contains the **A2D (AI-Augmented Development) Framework** — a methodology and service model maintained by **CodeLantern.AI** that enables teams to collaborate with AI agents across the SDLC.
 
 ## Repository Overview
 
-This is primarily a documentation repository containing:
-- Markdown files (`.md`) for framework documentation, agent definitions, and workflows
-- YAML frontmatter and structured data examples
-- Mermaid diagrams for flowcharts and sequence diagrams
-- PowerPoint artifacts and images
+This is primarily a **documentation repository** containing markdown files, YAML frontmatter, Mermaid diagrams, and generated artifacts (HTML, PowerPoint). The repository defines agent behaviors, workflows, and best practices for human-AI collaboration.
 
-The repository may incorporate tools for generating websites and slide decks from markdown files in the future.
+**Core concepts:**
+- **A2D Framework**: Methodology that extends Agile for human-AI collaboration
+- **Archetypes**: Reusable best-practice development blueprints (technology-specific playbooks)
+- **Agents**: AI actors that execute work following archetypes (planning, architecture, coding)
+- **MCP (Model Context Protocol)**: Standard for agent-to-tool communication
 
 ## Content Structure
 
-- `a2d/` – Core A2D framework documentation
-- `agents/` – Agent definition files and MCP configuration
-- `workflows/` – Workflow descriptions with mermaid diagrams
-- `business-model/` – Pricing and business-related documentation
-- `artifacts/` – Generated artifacts (Word, PowerPoint, HTML)
+- `a2d/` – Core A2D framework documentation, pricing, ideal customer profiles
+- `agents/` – Agent definitions (planning-agent.md, solution-architect-agent.md), MCP architecture
+- `workflows/` – Workflow descriptions with Mermaid flowcharts and sequence diagrams
+- `business-model/` – Business model and pricing information
+- `artifacts/` – Generated output files (HTML, PowerPoint)
 - `_images/` – Image assets
-- `phase 2/` – Phase 2 framework documentation
+- `phase 2/` – Phase 2 framework documentation (delivery team service model)
+- `_ai_packages/` – Generated zip packages for agent consumption (via package-for-agent.ps1)
+
+## Agent Definition Pattern
+
+Agent definitions follow a consistent YAML frontmatter structure in `agents/*.md`:
+
+```yaml
+---
+name: agent-name
+description: Brief role description
+tools: ["read", "search", "edit", "github-mcp-server/issue_write"]
+---
+```
+
+**Key agent types:**
+- **implementation-planner** (`planning-agent.md`): Creates plans and breaks down work; NO CODE
+- **solution-architect** (`solution-architect-agent.md`): Proposes design options with trade-off analysis; NO CODE
+- **codelantern-coder** (not yet defined): Implements code based on approved plans
+
+**Critical guardrail**: Planning and architect agents explicitly DO NOT write code. They produce structured markdown plans with acceptance criteria, risks, and recommendations.
+
+## MCP Tool Hierarchy
+
+Agents interact with external systems via MCP servers. The hierarchy is:
+
+```
+MCP Server (e.g., "github")
+├── Toolset (e.g., "issues", "projects") 
+│   └── Tool (e.g., "issue_read", "issue_write")
+│       └── Method (e.g., "get", "create", "update")
+```
+
+**Example invocation**: Agent references `github-mcp-server/issue_write` in tools list, then calls method `create` or `update`.
+
+See `agents/mcp-tool-instructions.md` for complete hierarchy and configuration patterns.
+
+## Automation Scripts
+
+**`package-for-agent.ps1`** – Creates versioned zip packages in `_ai_packages/`
+- Names packages: `codelantern-ai-<short-sha>.zip`
+- Uses git SHA from last commit touching readme.md (or HEAD if not found)
+- Excludes `.git/` and `_ai_packages/` from archive
+- Usage: `.\package-for-agent.ps1` (runs from repo root)
+
+**`clean-branches.ps1`** – Cleans merged branches
+- Switches to main, fetches with prune, deletes merged branches
+- Simple one-liner script for repo hygiene
 
 ## Writing Guidelines
 
 ### Markdown Formatting
 - Use ATX-style headers (`#`, `##`, `###`) with proper hierarchy
 - Include horizontal rules (`---`) between major sections
-- Use emoji sparingly for visual organization in section headers (e.g., `## 🧠 What Is A2D?`)
+- Use emoji sparingly for visual organization (e.g., `## 🧠 What Is A2D?`)
 - Use tables for structured comparisons and summaries
-- Include a version and last updated date at the end of documents
+- Include version and last updated date at end: `**Version:** 1.0` and `**Last Updated:** November 2025`
 
 ### Mermaid Diagrams
-- Use `flowchart TD` for top-down flowcharts
+- Use `flowchart TD` for top-down flowcharts (see `workflows/planning-workflow.md`)
 - Use `sequenceDiagram` for interaction sequences
 - Apply consistent styling with `classDef` for human, AI, and automation actors
-- Keep diagrams readable by limiting node text length
+- Example: Planning workflow includes Entry Point 1 (from chat) and Entry Point 2 (from existing issue)
 
 ### YAML Examples
-- When showing YAML examples in documentation, use code blocks with `yaml` language identifier
-- Follow consistent indentation (2 spaces)
+- Use code blocks with `yaml` language identifier
+- Follow 2-space indentation
+- Common in agent definitions and MCP server configurations
 
 ### Document Structure
-- Start with a clear title and brief description
-- Include an overview or introduction section
-- Use numbered lists for sequential steps
-- Use bullet lists for unordered items
-- End with version information and copyright where appropriate
+- Start with clear title and brief description
+- Include overview or introduction section
+- Use numbered lists for sequential steps, bullets for unordered items
+- End with version information and copyright
+
+### Copyright Notice
+**REQUIRED** – All markdown files must include at bottom:
+
+```markdown
+---
+
+© 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
+```
 
 ## Terminology
 
 - **A2D** – AI-Augmented Development
-- **Archetype** – Reusable best-practice development blueprints
-- **Agent** – AI actors that execute work following archetypes
-- **MCP** – Model Context Protocol
+- **Archetype** – Reusable best-practice development blueprints (the "playbooks")
+- **Agent** – AI actors that execute work following archetypes (the "workforce")
+- **MCP** – Model Context Protocol (agent-to-tool communication standard)
+- **Toolset** – Logical grouping of MCP tools (e.g., "issues", "projects")
+- **Entry Point** – How workflows are initiated (e.g., from chat vs. from existing issue)
 
 ## File Naming Conventions
 
-- Use lowercase with hyphens for markdown files (e.g., `a2d-framework-overview.md`)
-- Prefix related files with a common identifier (e.g., `a2d-pricing.md`, `a2d-vs-vibe-coding.md`)
+- Use lowercase with hyphens: `a2d-framework-overview.md`, `planning-workflow.md`
+- Prefix related files: `a2d-pricing.md`, `a2d-vs-vibe-coding.md`
+- Agent definitions: `<role>-agent.md` pattern (e.g., `planning-agent.md`)
+
+## Key Architectural Documents
+
+- **`a2d/a2d-framework-overview.md`** – Foundation: principles, IP assets (Archetypes vs Agents)
+- **`agents/codelantern-mcp-architecture.md`** – MCP server design (façade pattern, toolsets, internal modules)
+- **`workflows/planning-workflow.md`** – Detailed planning flow with mermaid diagrams for both entry points
+- **`agents/agent-awareness.md`** – How agents understand their roles via mode instructions
+- **`readme.md`** – Repository overview, phases (Phase 1: enablement, Phase 2: delivery team)
 
 ## Copyright
 
