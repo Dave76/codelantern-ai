@@ -4,7 +4,7 @@ project:
 
 format:
   revealjs:
-    theme: [default, custom.scss]
+    theme: [ default, custom.scss ]
     transition: slide
     background-transition: fade
     slide-number: true

@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "example-presentation.html#welcome",
+    "href": "example-presentation.html#welcome",
+    "title": "A2D Framework Overview",
+    "section": "Welcome",
+    "text": "Welcome\nA2D Framework\nAI-Augmented Development for Modern Teams\n\nWelcome to the A2D Framework presentation. This is an example of how to structure presentations using Quarto and Reveal.js."
+  },
+  {
+    "objectID": "example-presentation.html#what-is-a2d",
+    "href": "example-presentation.html#what-is-a2d",
+    "title": "A2D Framework Overview",
+    "section": "🧠 What Is A2D?",
+    "text": "🧠 What Is A2D?\nAI-Augmented Development\nA methodology that extends Agile for human-AI collaboration across the SDLC\n\nNot replacement: AI augments, doesn’t replace developers\nStructured collaboration: Defined roles and workflows\nQuality-focused: Built-in guardrails and review processes\nFramework + Service: Both methodology and execution\n\n\nA2D stands for AI-Augmented Development. It’s important to emphasize this is about augmentation, not replacement."
+  },
+  {
+    "objectID": "example-presentation.html#core-concepts",
+    "href": "example-presentation.html#core-concepts",
+    "title": "A2D Framework Overview",
+    "section": "Core Concepts",
+    "text": "Core Concepts\n\n\nArchetypes\nThe Playbooks\n\nReusable blueprints\nTechnology-specific\nBest practices codified\nExamples: .NET Core API, React SPA\n\n\nAgents\nThe Workforce\n\nAI actors executing work\nFollow archetypes\nSpecialized roles\nExamples: Planner, Architect, Coder"
+  },
+  {
+    "objectID": "example-presentation.html#agent-roles",
+    "href": "example-presentation.html#agent-roles",
+    "title": "A2D Framework Overview",
+    "section": "Agent Roles",
+    "text": "Agent Roles\n\n\n\n\n\n\n\n\nAgent\nResponsibility\nCode?\n\n\n\n\nPlanning Agent\nCreates implementation plans, breaks down work\n❌ No\n\n\nSolution Architect\nProposes designs, analyzes trade-offs\n❌ No\n\n\nCodeLantern Coder\nImplements code based on approved plans\n✅ Yes\n\n\n\n\n\n\nKey Principle: Planning and architecture agents explicitly do NOT write code"
+  },
+  {
+    "objectID": "example-presentation.html#planning-workflow",
+    "href": "example-presentation.html#planning-workflow",
+    "title": "A2D Framework Overview",
+    "section": "Planning Workflow",
+    "text": "Planning Workflow\n\n\n\n\n\nflowchart TD\n    A[User Request] --&gt; B{Entry Point}\n    B --&gt;|Chat| C[Planning Agent Creates Plan]\n    B --&gt;|Existing Issue| D[Planning Agent Updates Plan]\n    C --&gt; E[Creates GitHub Issue]\n    D --&gt; E\n    E --&gt; F[Structured Plan with AC]\n    F --&gt; G[Ready for Implementation]\n    \n    classDef human fill:#e1f5ff,stroke:#0066cc\n    classDef ai fill:#fff4e1,stroke:#ff6b35\n    class A,G human\n    class C,D,F ai"
+  },
+  {
+    "objectID": "example-presentation.html#two-entry-points",
+    "href": "example-presentation.html#two-entry-points",
+    "title": "A2D Framework Overview",
+    "section": "Two Entry Points",
+    "text": "Two Entry Points\n\nFrom Chat: User describes need, agent creates new issue with plan\nFrom Existing Issue: User provides issue link, agent adds structured plan\n\nResult: Consistent planning format with acceptance criteria, scope, and risks"
+  },
+  {
+    "objectID": "example-presentation.html#mcp-architecture",
+    "href": "example-presentation.html#mcp-architecture",
+    "title": "A2D Framework Overview",
+    "section": "MCP Architecture",
+    "text": "MCP Architecture\nModel Context Protocol enables agent-to-tool communication\n# Example: Agent tool configuration\ntools:\n  - \"read\"\n  - \"search\"\n  - \"edit\"\n  - \"github-mcp-server/issue_write\"\nHierarchy: Server → Toolset → Tool → Method"
+  },
+  {
+    "objectID": "example-presentation.html#benefits",
+    "href": "example-presentation.html#benefits",
+    "title": "A2D Framework Overview",
+    "section": "Benefits",
+    "text": "Benefits\n\n⚡ Speed: Faster development cycles\n📋 Structure: Consistent planning and documentation\n🎯 Quality: Built-in guardrails and review processes\n📚 Knowledge: Archetypes capture institutional knowledge\n🔄 Flexibility: Adapts to existing workflows"
+  },
+  {
+    "objectID": "example-presentation.html#getting-started",
+    "href": "example-presentation.html#getting-started",
+    "title": "A2D Framework Overview",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nUnderstand the framework – Review documentation\nDefine archetypes – Create technology-specific blueprints\nConfigure agents – Set up tools and permissions\nStart small – Pilot with one team/project\nIterate – Refine based on feedback"
+  },
+  {
+    "objectID": "example-presentation.html#questions",
+    "href": "example-presentation.html#questions",
+    "title": "A2D Framework Overview",
+    "section": "Questions?",
+    "text": "Questions?\nContact: CodeLantern.AI\nDocumentation: See /a2d/ and /agents/ directories\nNext Steps: Review detailed agent definitions and workflow docs\n\nOpen floor for questions. Key documents to reference: a2d-framework-overview.md, planning-workflow.md, agent definitions."
+  },
+  {
+    "objectID": "example-presentation.html#thank-you",
+    "href": "example-presentation.html#thank-you",
+    "title": "A2D Framework Overview",
+    "section": "Thank You",
+    "text": "Thank You\nA2D Framework\nAugmenting Development, Not Replacing Developers\n© 2025 TechLantern / CodeLantern.AI"
+  }
+]
