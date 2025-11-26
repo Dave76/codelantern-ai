@@ -166,76 +166,70 @@ sequenceDiagram
 
 ---
 
-## 3. Simplified Sequence Diagram (Role-Grouped)
+## 3. Simplified Sequence Diagram
 
 ```mermaid
 ---
 config:
-  theme: 'base'
-  themeVariables:
-    darkMode: false
-    bkg: '#ffffff'
+  theme: 'default'
+  <!-- themeVariables:
     actorBkg: '#eee'
-    actorBorder: '#666'
+    actorBorder: '#999'
     signalColor: '#000'
+    actorLineColor: '#999'
+    activationBkgColor: '#ff00ff'
+    sequenceNumberColor: '#ff00ff'
+    rectStrokeWidth: 0 -->
 ---
 sequenceDiagram
     
-    box rgba(224, 251, 216, 1) Human
+    box rgba(224, 251, 216, 0.5) Human
         participant U as User
     end
 
-    box  rgb(207,226,255) Agent
-        participant CP as Planner
+    box  rgba(207,226,255, 0.5) Agent
+        participant AI as Planner
     end
-    participant IS as Issues & Project
-    participant WF as Workflows
+
+    box rgba(255,232,161,0.5) GitHub
+        participant IS as Issues
+        participant PR as Project
+        participant WF as Workflows
+    end
 
     alt Entry 1 - From GitHub Agent Chat
-        U->>CP: Describe initiative and request plan
+        U->>AI: Describe initiative and request plan
     else Entry 2 - From existing GitHub issue
         U->>IS: Create or refine Issue
-        U->>CP: Request plan for Issue
+        U->>AI: Request plan for Issue
     end
     
-
     %% Planner understanding and draft (green)
-    rect rgb(209,247,196)
-        CP->>U: Ask clarifying questions (if needed)
-        U->>CP: Provide clarifications
-        CP->>U: Present draft plan (no issues created yet)
-    end
+    AI->>U: Ask clarifying questions (if needed)
+    U->>AI: Provide clarifications
+    AI->>U: Present draft plan (no issues created yet)
+    
 
     %% Refinement loop (blue + green)
-    loop Refine plan text
-        rect rgb(207,226,255)
-            U->>CP: Feedback on draft plan
-        end
-        rect rgb(209,247,196)
-            CP->>U: Updated plan
-        end
+    loop Refine plan
+        U->>AI: Feedback on draft plan
+        AI->>U: Updated plan
     end
 
     %% User approves plan (blue)
-    rect rgb(207,226,255)
-        U->>CP: Approve plan
-    end
+    U->>AI: Approve plan
 
-    %% Planner creates / updates issues (green)
-    rect rgb(209,247,196)
-        alt No existing main issue
-            CP->>IS: Create main issue + sub-issues with ai label
-        else Existing main issue
-            CP->>IS: Update main issue + create sub-issues with ai label
-        end
+    %% Planner creates or updates issues
+    alt No existing main issue
+        AI->>IS: Create main issue + sub-issues with ai label
+    else Existing main issue
+        AI->>IS: Update main issue + create sub-issues with ai label
     end
 
     %% Automation places and advances issue (yellow)
-    rect rgb(255,232,161)
-        IS->>WF: Issues with ai label trigger workflows
-        WF->>IS: Add to Project and set column = Backlog
-        WF->>IS: Move main issue to Ready column
-    end
+    IS->>WF: Issues with ai label trigger workflows
+    WF->>IS: Add to Project and set column = Backlog
+    WF->>IS: Move main issue to Ready column
     
 ```
 
