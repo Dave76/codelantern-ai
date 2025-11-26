@@ -160,3 +160,7 @@ The safest approach is to **start a fresh conversation** after making changes to
 - [MCP Tool Hierarchy](./MCP_TOOL_HIERARCHY.md) - Understanding the structure of MCP servers, toolsets, tools, and methods
 - [Custom Agent Tool Fix](./CUSTOM_AGENT_TOOL_FIX.md) - Proper tool naming conventions for agents
 - [GitHub MCP Server](./GITHUB_MCP_SERVER.md) - GitHub-specific MCP server configuration
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
