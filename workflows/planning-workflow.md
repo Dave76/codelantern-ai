@@ -1,4 +1,4 @@
-# A2D Planning Workflow – Planner (vNext)
+# A2D Planning Workflow
 
 This document describes the **A2D planning workflow** for the `codelantern-planner` agent, including:
 
@@ -46,6 +46,86 @@ EP2‑3. Planner creates Planning PR linked to the Issue and proceeds from Step 
 
 ```mermaid
 flowchart TD
+
+    A[Start]
+
+    B{Entry Point}
+
+    C[User opens chat and selects planner agent]
+    D[User creates Issue with clear description<br/>and adds it to Project]
+
+    E[User describes work and asks for a plan]
+    F[User assigns issue to planner and requests plan]
+
+    G[Planner creates Planning PR<br/>and analyzes request]
+    H[Planner drafts plan in PR]
+    I[Planner asks user to approve plan]
+
+    J{User approves draft?}
+    K[User provides feedback on draft plan]
+    L[Planner updates draft]
+
+    M[Planner creates or updates issues<br/>and applies ai label]
+    N[Workflows triggered by ai label]
+    O[Workflows add issues to Project Backlog]
+    P[Planner assigns PR to user<br/>for issue review]
+
+    Q{User approves?}
+
+    R[User provides feedback on issue details]
+    S[Planner resolves issue feedback]
+
+    T[Planning PR approved, merged, closed]
+
+    U[Workflow moves main issue to Ready]
+    V[End]
+
+    A --> B
+    B -->|Entry 1| C
+    B -->|Entry 2| D
+
+    C --> E
+    D --> F
+
+    E --> G
+    F --> G
+
+    G --> H
+    H --> I
+    I --> J
+
+    J -->|No| K
+    K --> L
+    L --> H
+
+    J -->|Yes| M
+
+    M --> N
+    N --> O
+
+    O --> P
+    P --> Q
+
+    Q -->|No| R
+    R --> S
+    S --> P
+
+    Q -->|Yes| T
+
+    T --> U
+    U --> V
+
+    classDef human fill:#d1f7c4,stroke:#3c8c3c,color:#000;
+    classDef ai fill:#cfe2ff,stroke:#4d7bd9,color:#000;
+    classDef automation fill:#ffe8a1,stroke:#d1a000,color:#000;
+
+    class C,E,D,F,J,K,Q,R,T human;
+    class G,H,I,L,P,M,S ai;
+    class N,O,U automation;
+```
+
+```mermaid
+flowchart LR
 
     A[Start]
 
