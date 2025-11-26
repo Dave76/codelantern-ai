@@ -1,10 +1,10 @@
-artifacts/ai-packages/
-artifacts/presentations/site_libs/
+bin/ai-packages/
+bin/presentations/site_libs/
 
 # Quarto cache and generated files
-presentations/.quarto/
+src/presentations/.quarto/
 **/*.quarto_ipynb
 
 # Temporary Office files
-artifacts/office/~*.pptx
-artifacts/office/~*.docx
+office/~*.pptx
+office/~*.docx

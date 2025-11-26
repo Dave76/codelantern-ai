@@ -39,8 +39,8 @@ try {
     }
 
     $zipName = "codelantern-ai-$shortSha.zip"
-    # Ensure output folder exists: artifacts/ai-packages
-    $outDir = Join-Path -Path (Get-Location) -ChildPath "artifacts\ai-packages"
+    # Ensure output folder exists: bin/ai-packages
+    $outDir = Join-Path -Path (Get-Location) -ChildPath "bin\ai-packages"
     if (-not (Test-Path $outDir)) {
         New-Item -Path $outDir -ItemType Directory -Force | Out-Null
     }
@@ -51,12 +51,12 @@ try {
         Remove-Item $zipPath -Force
     }
 
-    # Collect all files except those under .git, artifacts\ai-packages, and the zip file itself
+    # Collect all files except those under .git, bin\ai-packages, and the zip file itself
     $filesToZip =
         Get-ChildItem -Path . -Recurse -File -Force |
         Where-Object {
             $_.FullName -notmatch '[\\\/]\.git([\\\/]|$)' -and
-            $_.FullName -notmatch '[\\\/]artifacts[\\\/]ai-packages([\\\/]|$)' -and
+            $_.FullName -notmatch '[\\\/]bin[\\\/]ai-packages([\\\/]|$)' -and
             $_.FullName -ne $zipPath
         }
 

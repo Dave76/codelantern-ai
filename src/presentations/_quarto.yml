@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ../artifacts/presentations
+  output-dir: ../../bin/presentations
 
 format:
   revealjs:
@@ -10,7 +10,7 @@ format:
     slide-number: true
     show-notes: false
     preview-links: auto
-    logo: ../.images/codelantern-logo.png
+    logo: ../images/codelantern-logo.png
     footer: "© 2025 TechLantern / CodeLantern.AI"
     center: true
     width: 1920

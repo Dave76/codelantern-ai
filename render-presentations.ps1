@@ -23,7 +23,7 @@ Prerequisites:
     - Run from repository root: d:\Code\CodeLantern\CodeLantern.AI
 
 Output:
-    Generated presentations will be in: artifacts/presentations/
+    Generated presentations will be in: bin/presentations/
 
 Examples:
     # Render all presentations
@@ -57,12 +57,12 @@ Write-Host "✅ Quarto version: $quartoVersion" -ForegroundColor Green
 $currentDir = Get-Location
 
 # Determine repo root (handle being called from repo root or subdirectory)
-if (Test-Path "presentations") {
+if (Test-Path "src\presentations") {
     $repoRoot = Get-Location
-} elseif (Test-Path "..\presentations") {
+} elseif (Test-Path "..\src\presentations") {
     $repoRoot = Resolve-Path ".."
 } else {
-    Write-Host "❌ Error: Could not find presentations directory" -ForegroundColor Red
+    Write-Host "❌ Error: Could not find src\presentations directory" -ForegroundColor Red
     Write-Host "Please run this script from the repository root" -ForegroundColor Yellow
     exit 1
 }
@@ -70,7 +70,7 @@ if (Test-Path "presentations") {
 Set-Location $repoRoot
 
 # Ensure output directory exists
-$outputDir = Join-Path $repoRoot "artifacts\presentations"
+$outputDir = Join-Path $repoRoot "bin\presentations"
 if (-not (Test-Path $outputDir)) {
     New-Item -Path $outputDir -ItemType Directory -Force | Out-Null
     Write-Host "✅ Created output directory: $outputDir" -ForegroundColor Green
@@ -78,13 +78,17 @@ if (-not (Test-Path $outputDir)) {
 
 # Normalize the presentation file path if provided
 if ($PresentationFile) {
-    # If path starts with .\presentations\ or presentations\, make it relative to presentations dir
+    # If path starts with .\src\presentations\ or src\presentations\, extract just the filename
+    if ($PresentationFile -match '^\.?\\?src\\presentations\\(.+)$') {
+        $PresentationFile = $matches[1]
+    }
+    # Also handle legacy presentations\ path
     if ($PresentationFile -match '^\.?\\?presentations\\(.+)$') {
         $PresentationFile = $matches[1]
     }
     # If it's an absolute path, convert to relative from presentations dir
     if ([System.IO.Path]::IsPathRooted($PresentationFile)) {
-        $presentationsDir = Join-Path $repoRoot "presentations"
+        $presentationsDir = Join-Path $repoRoot "src\presentations"
         if ($PresentationFile.StartsWith($presentationsDir)) {
             $PresentationFile = $PresentationFile.Substring($presentationsDir.Length).TrimStart('\', '/')
         }
@@ -92,7 +96,7 @@ if ($PresentationFile) {
 }
 
 # Change to presentations directory
-$presentationsDir = Join-Path $repoRoot "presentations"
+$presentationsDir = Join-Path $repoRoot "src\presentations"
 if (-not (Test-Path $presentationsDir)) {
     Write-Host "❌ Error: Presentations directory not found" -ForegroundColor Red
     exit 1
