@@ -18,10 +18,10 @@ This is primarily a **documentation repository** containing markdown files, YAML
 - `agents/` – Agent definitions (planning-agent.md, solution-architect-agent.md), MCP architecture
 - `workflows/` – Workflow descriptions with Mermaid flowcharts and sequence diagrams
 - `business-model/` – Business model and pricing information
-- `artifacts/` – Generated output files (HTML, PowerPoint)
-- `_images/` – Image assets
+- `artifacts/` – Generated output files (HTML, PowerPoint, AI packages)
+- `.images/` – Image assets
 - `phase 2/` – Phase 2 framework documentation (delivery team service model)
-- `_ai_packages/` – Generated zip packages for agent consumption (via package-for-agent.ps1)
+- `artifacts/ai-packages/` – Generated zip packages for agent consumption (via package-for-agent.ps1)
 
 ## Agent Definition Pattern
 
@@ -59,10 +59,10 @@ See `agents/mcp-tool-instructions.md` for complete hierarchy and configuration p
 
 ## Automation Scripts
 
-**`package-for-agent.ps1`** – Creates versioned zip packages in `_ai_packages/`
+**`package-for-agent.ps1`** – Creates versioned zip packages in `artifacts/ai-packages/`
 - Names packages: `codelantern-ai-<short-sha>.zip`
 - Uses git SHA from last commit touching readme.md (or HEAD if not found)
-- Excludes `.git/` and `_ai_packages/` from archive
+- Excludes `.git/` and `artifacts/ai-packages/` from archive
 - Usage: `.\package-for-agent.ps1` (runs from repo root)
 
 **`clean-branches.ps1`** – Cleans merged branches
