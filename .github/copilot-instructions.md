@@ -22,8 +22,7 @@ This is primarily a **documentation repository** containing markdown files, YAML
   - `src/images/` – Image assets
   - `src/phase2/` – Phase 2 framework documentation (delivery team service model)
   - `src/presentations/` – Quarto presentation source files
-- `bin/` – Generated output files (HTML, presentations, AI packages)
-  - `bin/ai-packages/` – Generated zip packages for agent consumption (via package-for-agent.ps1)
+- `bin/` – Generated output files (HTML, presentations)
   - `bin/presentations/` – Rendered HTML presentations
 - `office/` – Office documents (.pptx, .docx files)
 
@@ -63,11 +62,10 @@ See `src/agents/mcp-tool-instructions.md` for complete hierarchy and configurati
 
 ## Automation Scripts
 
-**`package-for-agent.ps1`** – Creates versioned zip packages in `bin/ai-packages/`
-- Names packages: `codelantern-ai-<short-sha>.zip`
-- Uses git SHA from last commit touching readme.md (or HEAD if not found)
-- Excludes `.git/` and `bin/ai-packages/` from archive
-- Usage: `.\package-for-agent.ps1` (runs from repo root)
+**`render-presentations.ps1`** – Renders Quarto presentations to HTML
+- Renders presentations from `src/presentations/` to `bin/presentations/`
+- Usage: `.\render-presentations.ps1 -PresentationFile example-presentation.qmd`
+- Preview mode: `.\render-presentations.ps1 -Preview`
 
 **`clean-branches.ps1`** – Cleans merged branches
 - Switches to main, fetches with prune, deletes merged branches
