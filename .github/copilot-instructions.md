@@ -14,18 +14,21 @@ This is primarily a **documentation repository** containing markdown files, YAML
 
 ## Content Structure
 
-- `a2d/` – Core A2D framework documentation, pricing, ideal customer profiles
-- `agents/` – Agent definitions (planning-agent.md, solution-architect-agent.md), MCP architecture
-- `workflows/` – Workflow descriptions with Mermaid flowcharts and sequence diagrams
-- `business-model/` – Business model and pricing information
-- `artifacts/` – Generated output files (HTML, PowerPoint)
-- `_images/` – Image assets
-- `phase 2/` – Phase 2 framework documentation (delivery team service model)
-- `_ai_packages/` – Generated zip packages for agent consumption (via package-for-agent.ps1)
+- `src/` – All source content and documentation
+  - `src/a2d/` – Core A2D framework documentation, pricing, ideal customer profiles
+  - `src/agents/` – Agent definitions (planning-agent.md, solution-architect-agent.md), MCP architecture
+  - `src/workflows/` – Workflow descriptions with Mermaid flowcharts and sequence diagrams
+  - `src/business-model/` – Business model and pricing information
+  - `src/images/` – Image assets
+  - `src/phase2/` – Phase 2 framework documentation (delivery team service model)
+  - `src/presentations/` – Quarto presentation source files
+- `bin/` – Generated output files (HTML, presentations)
+  - `bin/presentations/` – Rendered HTML presentations
+- `office/` – Office documents (.pptx, .docx files)
 
 ## Agent Definition Pattern
 
-Agent definitions follow a consistent YAML frontmatter structure in `agents/*.md`:
+Agent definitions follow a consistent YAML frontmatter structure in `src/agents/*.md`:
 
 ```yaml
 ---
@@ -55,15 +58,14 @@ MCP Server (e.g., "github")
 
 **Example invocation**: Agent references `github-mcp-server/issue_write` in tools list, then calls method `create` or `update`.
 
-See `agents/mcp-tool-instructions.md` for complete hierarchy and configuration patterns.
+See `src/agents/mcp-tool-instructions.md` for complete hierarchy and configuration patterns.
 
 ## Automation Scripts
 
-**`package-for-agent.ps1`** – Creates versioned zip packages in `_ai_packages/`
-- Names packages: `codelantern-ai-<short-sha>.zip`
-- Uses git SHA from last commit touching readme.md (or HEAD if not found)
-- Excludes `.git/` and `_ai_packages/` from archive
-- Usage: `.\package-for-agent.ps1` (runs from repo root)
+**`render-presentations.ps1`** – Renders Quarto presentations to HTML
+- Renders presentations from `src/presentations/` to `bin/presentations/`
+- Usage: `.\render-presentations.ps1 -PresentationFile example-presentation.qmd`
+- Preview mode: `.\render-presentations.ps1 -Preview`
 
 **`clean-branches.ps1`** – Cleans merged branches
 - Switches to main, fetches with prune, deletes merged branches
@@ -79,7 +81,7 @@ See `agents/mcp-tool-instructions.md` for complete hierarchy and configuration p
 - Include version and last updated date at end: `**Version:** 1.0` and `**Last Updated:** November 2025`
 
 ### Mermaid Diagrams
-- Use `flowchart TD` for top-down flowcharts (see `workflows/planning-workflow.md`)
+- Use `flowchart TD` for top-down flowcharts (see `src/workflows/planning-workflow.md`)
 - Use `sequenceDiagram` for interaction sequences
 - Apply consistent styling with `classDef` for human, AI, and automation actors
 - Example: Planning workflow includes Entry Point 1 (from chat) and Entry Point 2 (from existing issue)
@@ -121,10 +123,10 @@ See `agents/mcp-tool-instructions.md` for complete hierarchy and configuration p
 
 ## Key Architectural Documents
 
-- **`a2d/a2d-framework-overview.md`** – Foundation: principles, IP assets (Archetypes vs Agents)
-- **`agents/codelantern-mcp-architecture.md`** – MCP server design (façade pattern, toolsets, internal modules)
-- **`workflows/planning-workflow.md`** – Detailed planning flow with mermaid diagrams for both entry points
-- **`agents/agent-awareness.md`** – How agents understand their roles via mode instructions
+- **`src/a2d/a2d-framework-overview.md`** – Foundation: principles, IP assets (Archetypes vs Agents)
+- **`src/agents/codelantern-mcp-architecture.md`** – MCP server design (façade pattern, toolsets, internal modules)
+- **`src/workflows/planning-workflow.md`** – Detailed planning flow with mermaid diagrams for both entry points
+- **`src/agents/agent-awareness.md`** – How agents understand their roles via mode instructions
 - **`readme.md`** – Repository overview, phases (Phase 1: enablement, Phase 2: delivery team)
 
 ## Copyright

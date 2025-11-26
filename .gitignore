@@ -1,4 +1,9 @@
-_ai_packages/
+bin/presentations/site_libs/
 
-# Temporary PowerPoint files
-~*.pptx
+# Quarto cache and generated files
+src/presentations/.quarto/
+**/*.quarto_ipynb
+
+# Temporary Office files
+office/~*.pptx
+office/~*.docx
