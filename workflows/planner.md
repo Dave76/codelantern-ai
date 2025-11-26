@@ -23,23 +23,21 @@ The flowchart uses **explicit color styling** for nodes.
 ### Entry Point 1 – Start from Chat (No Existing Issue)
 
 1. **User opens a new chat session** in the GitHub browser for an A2D-enabled repository.  
-2. **User selects the `codelantern-planner` agent** in the chat interface.  
-3. **User describes the initiative** and asks the planner to create a plan (for example, “Please create a plan for the following…”).  
-4. **Planner creates a planning branch and Planning PR** dedicated to analysis and planning (no implementation work yet).  
-5. **User can monitor the Planning PR (optional)** – they may watch comments and interim updates as the planner works.  
-6. **Planner performs analysis and drafts a plan**, posting the proposed approach and clear candidate “next steps” into the Planning PR.  
-7. **User approves the plan** (for example, via PR approval or an approval comment), signaling that the planner can now create structured work items.  
-8. **Planner creates or updates a main GitHub Issue and sub-issues** as needed, applying the `ai` label to all issues it creates or manages.  
-9. **GitHub workflows trigger on the `ai` label**, automatically adding the issue(s) to the correct Project.  
-10. **Workflows also ensure issues are placed into the Project Backlog** column.  
-11. **Planner assigns the Planning PR back to the user** for final review of both the plan and the created issues.  
-12. **User and planner iterate on both the plan and the issues**:  
-    - User provides feedback via PR comments and issue comments.  
+1. **User selects the `codelantern-planner` agent** in the chat interface.  
+1. **User describes the initiative** and asks the planner to create a plan (for example, “Please create a plan for the following…”).  
+1. **Planner creates a planning branch and Planning PR** dedicated to analysis and planning (no implementation work yet).  
+1. **User can monitor the Planning PR (optional)** – they may watch comments and interim updates as the planner works.  
+1. **Planner performs analysis and drafts a plan**, posting the proposed approach and clear candidate “next steps” into the Planning PR.  
+1. **User approves the plan** (Adding comments to the PR, but does not Approve or Close the PR), signaling that the planner can now create structured work items.  
+1. **Planner creates or updates a main GitHub Issue and Sub-issues** as needed, applying the `ai` label to all issues it creates or manages.  
+1. **GitHub workflows trigger on the `ai` label**, automatically adding the issue(s) to the correct Project.  
+1. **Workflows also ensure issues are placed into the Project Backlog** column.  
+1. **Planner assigns the Planning PR back to the user** for final review the created or updated issues and sub-issues.  
+1. **User and planner iterate on both the plan and the issues**:  
+    - User provides feedback via PR comments.  
     - Planner updates the plan text, issue titles, descriptions, and links.  
-14. **User gives final approval** on the Planning PR, which is then merged into `main`, closed, and the planning branch deleted.  
-15. **GitHub workflows move the main issue into the Ready column**, indicating it is ready for development or assignment to the `codelantern-coder` agent.
-
-> Note: Step number 13 is effectively an implied “ongoing iteration” and is covered in step 12.
+1. **User gives final approval** on the Planning PR, which is then merged into `main`, closed, and the planning branch deleted.  
+1. **GitHub workflows move the main issue into the Ready column**, indicating it is ready for development or assignment to the `codelantern-coder` agent.
 
 ---
 
@@ -51,6 +49,7 @@ EP2-3. **User assigns the Issue to Copilot**, selects the `codelantern-planner` 
 > “Please create a plan for this work item (#123).”
 
 EP2-4. **From here, the flow is the same as Entry Point 1 from Step 4 onward**:  
+
 - Planner creates a Planning PR linked to the issue,  
 - Performs analysis and drafts a plan,  
 - Awaits user approval,  
@@ -183,20 +182,12 @@ config:
 ---
 sequenceDiagram
     
-    box rgba(224, 251, 216, 0.5) Human
-        participant U as User
-    end
-
-    box  rgba(207,226,255, 0.5) Agent
-        participant AI as Planner
-    end
-
-    box rgba(255,232,161,0.5) GitHub
-        participant IS as Issues
-        participant PR as Project
-        participant WF as Workflows
-    end
-
+    participant U as User
+    participant AI as Planner
+    participant IS as Issue
+    participant PR as Project
+    participant WF as Workflow
+    
     alt Entry 1 - From GitHub Agent Chat
         U->>AI: Describe initiative and request plan
     else Entry 2 - From existing GitHub issue
@@ -240,7 +231,7 @@ sequenceDiagram
 The flowchart below uses explicit node styling to match the conceptual colors used in the sequence diagrams.
 
 ```mermaid
-flowchart TD
+flowchart 
 
     %% NODES ---------------------------------------------------------
     A[Start]
@@ -253,23 +244,23 @@ flowchart TD
     E[User describes work and asks for a plan]
     F[User assigns issue to planner and asks for a plan]
 
-    G[Planner analyzes request]
-    H[Planner drafts plan]
+    G[Planner creates PR and analyzes request]
+    H[Planner drafts plan in PR]
+    HA[Planner asks for approval to proceed]
 
-    I{User approves plan?}
-    J[User provides feedback on draft plan]
+    I{User approves draft?}
+    J[User provides feedback on draft plan, using PR comments]
     K[Planner updates draft plan]
 
     L[Planner creates or updates issues with ai label]
-
     M[GitHub workflows triggered by ai label]
-    N[Workflows add issue to Project and set column to Backlog]
+    N[Workflows add issues to Project in Backlog]
+    O[Planner assigns PR to user to review issue modifications]
 
-    O[Planning PR assigned to user]
-    P{User happy with plan and work items?}
+    P{User approves?}
 
-    Q[User comments on PR and issues]
-    R[Planner adjusts issue details]
+    Q[User provides feedback using PR comments]
+    R[Planner resolves feedback modifying issue details]
 
     S[Planning PR approved, merged, and closed]
 
@@ -288,7 +279,8 @@ flowchart TD
     F --> G
 
     G --> H
-    H --> I
+    H --> HA
+    HA --> I
 
     I -->|No| J
     J --> K
@@ -317,10 +309,10 @@ flowchart TD
     classDef automation fill:#ffe8a1,stroke:#d1a000,stroke-width:1px,color:#000;
 
     %% Human nodes
-    class C,E,D,F,I,J,O,P,Q,U,S human;
+    class C,E,D,F,I,J,P,Q,S human;
 
     %% AI agent nodes
-    class G,H,K,L,R ai;
+    class G,H,HA,K,O,L,R ai;
 
     %% Automation nodes
     class M,N,T automation;
