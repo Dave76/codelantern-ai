@@ -53,10 +53,17 @@ if (-not $quartoVersion) {
 
 Write-Host "✅ Quarto version: $quartoVersion" -ForegroundColor Green
 
-# Ensure we're in the right directory
-$repoRoot = "d:\Code\CodeLantern\CodeLantern.AI"
-if (-not (Test-Path $repoRoot)) {
-    Write-Host "❌ Error: Repository root not found at $repoRoot" -ForegroundColor Red
+# Get current working directory (where script was invoked)
+$currentDir = Get-Location
+
+# Determine repo root (handle being called from repo root or subdirectory)
+if (Test-Path "presentations") {
+    $repoRoot = Get-Location
+} elseif (Test-Path "..\presentations") {
+    $repoRoot = Resolve-Path ".."
+} else {
+    Write-Host "❌ Error: Could not find presentations directory" -ForegroundColor Red
+    Write-Host "Please run this script from the repository root" -ForegroundColor Yellow
     exit 1
 }
 
@@ -67,6 +74,21 @@ $outputDir = Join-Path $repoRoot "artifacts\presentations"
 if (-not (Test-Path $outputDir)) {
     New-Item -Path $outputDir -ItemType Directory -Force | Out-Null
     Write-Host "✅ Created output directory: $outputDir" -ForegroundColor Green
+}
+
+# Normalize the presentation file path if provided
+if ($PresentationFile) {
+    # If path starts with .\presentations\ or presentations\, make it relative to presentations dir
+    if ($PresentationFile -match '^\.?\\?presentations\\(.+)$') {
+        $PresentationFile = $matches[1]
+    }
+    # If it's an absolute path, convert to relative from presentations dir
+    if ([System.IO.Path]::IsPathRooted($PresentationFile)) {
+        $presentationsDir = Join-Path $repoRoot "presentations"
+        if ($PresentationFile.StartsWith($presentationsDir)) {
+            $PresentationFile = $PresentationFile.Substring($presentationsDir.Length).TrimStart('\', '/')
+        }
+    }
 }
 
 # Change to presentations directory
