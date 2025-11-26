@@ -68,6 +68,7 @@ This repo contains the A2D framework, templates, and artifacts.
 - A2D vs. Vibe Coding: `a2d/a2d-vs-vibe-coding.md`
 - Pricing (canonical): `business-model/a2d-pricing.md`
 - Framework + Pricing (HTML): `artifacts/CodeLantern-A2D-Framework-and-Pricing.html`
+- Presentations: `presentations/readme.md` (Quarto + Reveal.js framework)
 
 ---
 

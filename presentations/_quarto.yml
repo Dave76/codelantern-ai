@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: ../artifacts/presentations
+
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-notes: false
+    preview-links: auto
+    logo: ../_images/codelantern-logo.png
+    footer: "© 2025 TechLantern / CodeLantern.AI"
+    center: true
+    width: 1920
+    height: 1080
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.0
+    
+execute:
+  echo: false
+  warning: false

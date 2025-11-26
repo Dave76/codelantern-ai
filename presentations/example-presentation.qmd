@@ -1,0 +1,170 @@
+---
+title: "A2D Framework Overview"
+subtitle: "AI-Augmented Development for Modern Teams"
+author: "CodeLantern.AI"
+date: "November 2025"
+format: revealjs
+---
+
+## Welcome {.title-slide}
+
+**A2D Framework**
+
+*AI-Augmented Development for Modern Teams*
+
+::: {.notes}
+Welcome to the A2D Framework presentation. This is an example of how to structure presentations using Quarto and Reveal.js.
+:::
+
+---
+
+## 🧠 What Is A2D?
+
+**A**I-**A**ugmented **D**evelopment
+
+A methodology that extends Agile for human-AI collaboration across the SDLC
+
+::: {.incremental}
+- **Not replacement**: AI augments, doesn't replace developers
+- **Structured collaboration**: Defined roles and workflows
+- **Quality-focused**: Built-in guardrails and review processes
+- **Framework + Service**: Both methodology and execution
+:::
+
+::: {.notes}
+A2D stands for AI-Augmented Development. It's important to emphasize this is about augmentation, not replacement.
+:::
+
+---
+
+## Core Concepts
+
+:::: {.columns}
+::: {.column width="50%"}
+### Archetypes
+*The Playbooks*
+
+- Reusable blueprints
+- Technology-specific
+- Best practices codified
+- Examples: .NET Core API, React SPA
+:::
+
+::: {.column width="50%"}
+### Agents
+*The Workforce*
+
+- AI actors executing work
+- Follow archetypes
+- Specialized roles
+- Examples: Planner, Architect, Coder
+:::
+::::
+
+---
+
+## Agent Roles
+
+| Agent | Responsibility | Code? |
+|-------|---------------|-------|
+| **Planning Agent** | Creates implementation plans, breaks down work | ❌ No |
+| **Solution Architect** | Proposes designs, analyzes trade-offs | ❌ No |
+| **CodeLantern Coder** | Implements code based on approved plans | ✅ Yes |
+
+::: {.callout}
+**Key Principle**: Planning and architecture agents explicitly do NOT write code
+:::
+
+---
+
+## Planning Workflow
+
+```{mermaid}
+flowchart TD
+    A[User Request] --> B{Entry Point}
+    B -->|Chat| C[Planning Agent Creates Plan]
+    B -->|Existing Issue| D[Planning Agent Updates Plan]
+    C --> E[Creates GitHub Issue]
+    D --> E
+    E --> F[Structured Plan with AC]
+    F --> G[Ready for Implementation]
+    
+    classDef human fill:#e1f5ff,stroke:#0066cc
+    classDef ai fill:#fff4e1,stroke:#ff6b35
+    class A,G human
+    class C,D,F ai
+```
+
+---
+
+## Two Entry Points
+
+::: {.incremental}
+1. **From Chat**: User describes need, agent creates new issue with plan
+2. **From Existing Issue**: User provides issue link, agent adds structured plan
+:::
+
+**Result**: Consistent planning format with acceptance criteria, scope, and risks
+
+---
+
+## MCP Architecture
+
+**Model Context Protocol** enables agent-to-tool communication
+
+```yaml
+# Example: Agent tool configuration
+tools:
+  - "read"
+  - "search"
+  - "edit"
+  - "github-mcp-server/issue_write"
+```
+
+Hierarchy: **Server** → **Toolset** → **Tool** → **Method**
+
+---
+
+## Benefits
+
+::: {.incremental}
+- ⚡ **Speed**: Faster development cycles
+- 📋 **Structure**: Consistent planning and documentation
+- 🎯 **Quality**: Built-in guardrails and review processes
+- 📚 **Knowledge**: Archetypes capture institutional knowledge
+- 🔄 **Flexibility**: Adapts to existing workflows
+:::
+
+---
+
+## Getting Started
+
+1. **Understand the framework** – Review documentation
+2. **Define archetypes** – Create technology-specific blueprints
+3. **Configure agents** – Set up tools and permissions
+4. **Start small** – Pilot with one team/project
+5. **Iterate** – Refine based on feedback
+
+---
+
+## Questions?
+
+**Contact**: CodeLantern.AI
+
+**Documentation**: See `/a2d/` and `/agents/` directories
+
+**Next Steps**: Review detailed agent definitions and workflow docs
+
+::: {.notes}
+Open floor for questions. Key documents to reference: a2d-framework-overview.md, planning-workflow.md, agent definitions.
+:::
+
+---
+
+## Thank You {.title-slide}
+
+**A2D Framework**
+
+*Augmenting Development, Not Replacing Developers*
+
+© 2025 TechLantern / CodeLantern.AI
