@@ -14,19 +14,19 @@ This document describes the **A2D planning workflow** for the `codelantern-plann
 ### Entry Point 1 – Start from Chat (No Existing Issue)
 
 1. User opens a new chat session in GitHub.  
-2. User selects the `codelantern-planner` agent.  
-3. User describes the initiative and requests a plan.  
-4. Planner creates a planning branch and opens a draft PR.  
-5. User can optionally monitor the PR and provide live feedback.  
-6. Planner performs analysis and drafts the plan ending with candidate "next steps".
-7. User approves the plan through PR comments, leaving the PR open.  
-8. Planner creates/updates the main issue, optionally adds sub-issues and attaches the `ai` label.
-9. Workflows trigger on the `ai` label.  
-10. Workflows add issues to the Backlog.  
-11. Planner assigns PR back to the user for final review.  
-12. User and planner iterate on issues and plan summaries.  
-14. User approves the PR; planner merges and closes it.  
-15. Workflows move the Issue into Ready.
+1. User selects the `codelantern-planner` agent.  
+1. User describes the initiative and requests a plan.  
+1. Planner creates a planning branch and opens a draft PR.  
+1. User can optionally monitor the PR and provide live feedback.  
+1. Planner performs analysis and drafts the plan ending with candidate "next steps".
+1. User approves the plan through PR comments, leaving the PR open.  
+1. Planner creates/updates the main issue, optionally adds sub-issues and attaches the `ai` label.
+1. Workflows trigger on the `ai` label.  
+1. Workflows add issues to the Backlog.  
+1. Planner assigns PR back to the user for final review.  
+1. User and planner iterate on issues and plan summaries.  
+1. User approves the PR; planner merges and closes it.  
+1. Workflows move the Issue into Ready.
 
 ### Entry Point 1 – More detailed (we should likely choose either this or the more summarized text)
 
