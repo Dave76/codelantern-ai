@@ -1,5 +1,9 @@
 artifacts/ai-packages/
 artifacts/presentations/site_libs/
 
+# Quarto cache and generated files
+presentations/.quarto/
+**/*.quarto_ipynb
+
 # Temporary PowerPoint files
 ~*.pptx

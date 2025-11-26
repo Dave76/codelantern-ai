@@ -1,6 +1,0 @@
-/.quarto/
-
-**/*.quarto_ipynb
-
-# Quarto generated libraries
-**/site_libs/
