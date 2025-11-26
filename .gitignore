@@ -1,4 +1,5 @@
 artifacts/ai-packages/
+artifacts/presentations/site_libs/
 
 # Temporary PowerPoint files
 ~*.pptx
