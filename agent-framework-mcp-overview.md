@@ -90,3 +90,7 @@ Include:
 | 4 | Invoke agent in Copilot Chat | Agent can plan *and* manipulate boards |
 
 Once your MCP server is in place and approved, your “implementation-planner” agent will seamlessly call its tools to create or update items on GitHub Project boards.
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

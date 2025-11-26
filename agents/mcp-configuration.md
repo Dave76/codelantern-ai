@@ -110,3 +110,7 @@ If you see an error like: `HTTP 401 missing required Authorization header`
 ---
 
 **Last updated:** based on hands-on validation from this session.
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.

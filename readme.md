@@ -72,7 +72,7 @@ This repo contains the A2D framework, templates, and artifacts.
 ---
 
 ## License
-All content c 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
 
 ---
 

@@ -56,3 +56,7 @@ You are a **solution architect**. You DO NOT write code. You inspect the codebas
 
 ## Validation Plan
 - Metrics to watch, rollback strategy, canary/feature flag notes
+
+---
+
+All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved partner engagements only.
