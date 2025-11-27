@@ -16,14 +16,24 @@ This is primarily a **documentation repository** containing markdown files, YAML
 
 - `src/` – All source content and documentation
   - `src/a2d/` – Core A2D framework documentation, pricing, ideal customer profiles
+    - `a2d-framework-overview.md` – Foundation document
+    - `a2d-vs-vibe-coding.md` – Comparison with ad-hoc AI usage
+    - `a2d-with-ip-vs-without.md` – Strategic implementation comparison (Open IP vs. Protected IP vs. Hybrid)
+    - `a2d-ideal-customer-profiles.md` – Target customer segments
+    - `a2d-pricing.md` – Pricing models and packages
   - `src/agents/` – Agent definitions (planning-agent.md, solution-architect-agent.md), MCP architecture
   - `src/workflows/` – Workflow descriptions with Mermaid flowcharts and sequence diagrams
   - `src/business-model/` – Business model and pricing information
   - `src/images/` – Image assets
   - `src/phase2/` – Phase 2 framework documentation (delivery team service model)
   - `src/presentations/` – Quarto presentation source files
+    - `codelantern-deck.qmd` – Main sales/enablement presentation
+    - `example-presentation.qmd` – Template for new presentations
 - `bin/` – Generated output files (HTML, presentations)
   - `bin/presentations/` – Rendered HTML presentations
+    - `codelantern-deck.html` – Main presentation (rendered)
+    - `example-presentation.html` – Example template (rendered)
+    - `index.html` – Presentation browser/index
 - `office/` – Office documents (.pptx, .docx files)
 
 ## Agent Definition Pattern
@@ -124,10 +134,12 @@ See `src/agents/mcp-tool-instructions.md` for complete hierarchy and configurati
 ## Key Architectural Documents
 
 - **`src/a2d/a2d-framework-overview.md`** – Foundation: principles, IP assets (Archetypes vs Agents)
+- **`src/a2d/a2d-with-ip-vs-without.md`** – Strategic comparison: Open IP vs. Protected IP vs. Hybrid models (includes GitHub/Copilot foundation requirements)
 - **`src/agents/codelantern-mcp-architecture.md`** – MCP server design (façade pattern, toolsets, internal modules)
 - **`src/workflows/planning-workflow.md`** – Detailed planning flow with mermaid diagrams for both entry points
 - **`src/agents/agent-awareness.md`** – How agents understand their roles via mode instructions
 - **`readme.md`** – Repository overview, phases (Phase 1: enablement, Phase 2: delivery team)
+- **`src/presentations/codelantern-deck.qmd`** – Main sales/enablement presentation (Quarto source)
 
 ## Copyright
 

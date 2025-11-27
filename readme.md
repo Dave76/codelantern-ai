@@ -64,11 +64,22 @@ This repo contains the A2D framework, templates, and artifacts.
 ---
 
 ## Docs Index
+
+### Core Framework Documents
 - Framework Overview: `src/a2d/a2d-framework-overview.md`
 - A2D vs. Vibe Coding: `src/a2d/a2d-vs-vibe-coding.md`
+- A2D with IP vs. Without: `src/a2d/a2d-with-ip-vs-without.md` — Strategic comparison of three implementation models
+- Ideal Customer Profiles: `src/a2d/a2d-ideal-customer-profiles.md`
 - Pricing (canonical): `src/business-model/a2d-pricing.md`
+
+### Presentations
+- Presentation Framework: `src/presentations/readme.md` (Quarto + Reveal.js)
+- CodeLantern Deck: `bin/presentations/codelantern-deck.html` — Main sales/enablement presentation
+- Example Presentation: `bin/presentations/example-presentation.html` — Template for new decks
+- Presentation Index: `bin/presentations/index.html` — Browse all presentations
+
+### Generated Artifacts
 - Framework + Pricing (HTML): `bin/CodeLantern-A2D-Framework-and-Pricing.html`
-- Presentations: `src/presentations/readme.md` (Quarto + Reveal.js framework)
 
 ---
 
@@ -77,13 +88,6 @@ All content © 2025 TechLantern / CodeLantern.AI. For internal use and approved 
 
 ---
 
-## TODO
-
-- [] Workflows
-  - [] Iterate: Code, review, iterate, debug (using the agents locally for more rapid iteration on a PR)
-  - [] Suggestion: Use agent to suggest what should be done next
-  - [] Planning: Use the `planner` to write a more complex user story (from chat interface)
-  - [] Design: Use the the `ux-designer` to design a screen component (this will need to be mocked up)
 
 
 **Version:** 2.0  
