@@ -29,6 +29,61 @@ Transforming software development through AI-augmented collaboration.
 
 ---
 
+## Company Foundation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Legal Entity**
+
+- **CodeLantern Inc.**
+
+**Digital Presence**
+
+- Primary: **codelantern.ai**
+- Redirect: **codelantern.com**
+- Instagram: **@codelantern**
+- LinkedIn: **CodeLantern**
+- YouTube: **@CodeLantern**
+:::
+
+::: {.column width="50%"}
+**Core Methodology**
+
+- **A2D Framework**
+  - AI **Augmented** Development?
+  - AI **Assisted** Development?
+
+**Open Approach**
+
+- Community-driven methodology
+- Similar to Agile evolution
+- Proprietary tools + open process
+:::
+
+::::
+
+::: {.notes}
+**Company structure decisions:**
+- Legal entity will be CodeLantern Inc. for professional credibility
+- Using .ai domain for primary presence signals our AI focus and modern positioning
+- .com will redirect to maintain brand consistency and catch alternative traffic
+
+**A2D terminology decision:**
+- "Augmented" implies enhancement and amplification of developer capabilities
+- "Assisted" implies help and support, potentially weaker positioning
+- Current recommendation: "Augmented" for stronger value proposition
+
+**Open vs. proprietary strategy:**
+- Consider opensourcing the A2D methodology framework similar to how Agile evolved
+- Keeps methodology and best practices as community contribution
+- Proprietary advantage comes from our tools, archetypes, and implementation expertise
+- This positions us as thought leaders while protecting commercial value
+- Creates ecosystem effect and drives adoption
+:::
+
+---
+
 ## Brand Identity
 
 :::: {.columns}
