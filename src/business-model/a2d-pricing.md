@@ -34,6 +34,7 @@ We deliver A2D through three complementary offerings - designed to scale from in
 | **Enterprise** | GitHub Enterprise (larger teams / governance needs) | Includes enterprise governance, data residency, and advanced workflow architecture. | **$15,000** |
 
 **Deliverables**
+
 - A2D process design & team readiness assessment  
 - Copilot / Agent Framework enablement plan  
 - Archetype & Agent role definitions  
@@ -53,11 +54,13 @@ We deliver A2D through three complementary offerings - designed to scale from in
 | **Enterprise Extension** | *Custom ($3K - $5K / month)* | 20 + hours | Multi-team enablement, dedicated advisor, Slack/Teams integration. |
 
 **Terms**
+
 - 6-month minimum commitment (12-month term  10 % discount)  
 - Unused hours roll over for one month  
 - Additional hours billed at **$275 / hour**  
 
 Subscribers automatically receive:
+
 - Updated **Archetype Frameworks**  
 - Revised **Agent Definition Libraries**  
 - New **Agent-Friendly Authoring Templates**  
@@ -75,6 +78,7 @@ Subscribers automatically receive:
 | **Enterprise** | Dedicated, named A2D Coach (full allocation) | **$25,000 / month** |
 
 **Includes**
+
 - Full **Sustain & Evolve** subscription  
 - Weekly coaching sessions & retrospectives  
 - Hands-on support for agent integration & archetype adoption  
@@ -106,6 +110,7 @@ Subscribers automatically receive:
 ## ?? Continuous Value
 
 Every subscription ensures clients stay current with:  
+
 - The evolving **Archetype Framework** (best-practice blueprints)  
 - The **Agent Definition Library** (role-based AI configurations)  
 - Improved **Agent-Friendly Authoring Standards**  
