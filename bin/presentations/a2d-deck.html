@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.26">
+
+  <meta name="author" content="David Judd">
+  <title>A2D – AI-Augmented Development</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2b4e6156846b38773b1e182d8f62f51b.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">A2D – AI-Augmented Development</h1>
+  <p class="subtitle">Strategy &amp; Funding Deck</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+David Judd 
+</div>
+</div>
+</div>
+
+</section>
+<section class="slide level2 center">
+
+<!--
+Image expectations (relative to this file if stored in /presentations):
+
+../src/images/a2d-mikes-01.png
+../src/images/a2d-mikes-02.png
+../src/images/a2d-mikes-03.png
+...
+-->
+</section>
+<section id="a2d" class="slide level2 center">
+<h2>A2D</h2>
+<p>AI Augmented Development<br>
+AI Assisted Development</p>
+
+<img data-src="../src/images/a2d-mikes-01.png" style="width:80.0%" alt="Title slide background" class="r-stretch"></section>
+<section id="a2d-is-not-vibe-coding" class="slide level2 center">
+<h2>A2D is not vibe coding</h2>
+<h3 id="vibe-coding-definition">Vibe Coding — Definition</h3>
+<ul>
+<li class="fragment">Development approach where the human sets the direction and the AI handles the details<br>
+</li>
+<li class="fragment">Emphasis on speed, experimentation, and “vibes” rather than clear structure<br>
+</li>
+<li class="fragment">Heavy reliance on natural-language prompts with minimal scaffolding<br>
+</li>
+<li class="fragment">Great for prototypes and quick experiments, but weaker on governance and repeatability</li>
+</ul>
+
+<img data-src="../src/images/a2d-mikes-02.png" style="width:70.0%" alt="Vibe coding marketing screenshots" class="r-stretch"></section>
+<section id="a2d-on-the-spectrum" class="slide level2 center">
+<h2>A2D on the spectrum</h2>
+
+<img data-src="../src/images/a2d-mikes-03.png" style="width:90.0%" alt="AI development spectrum with A2D between traditional dev and vibe coding" class="r-stretch"><ul>
+<li class="fragment"><strong>Traditional Development</strong> – Little or no AI assistance<br>
+</li>
+<li class="fragment"><strong>Vibe Coding</strong> – AI drives most implementation; humans steer loosely<br>
+</li>
+<li class="fragment"><strong>A2D</strong> – Structured collaboration between humans and AI agents, with:
+<ul>
+<li class="fragment">Clear roles</li>
+<li class="fragment">Guardrails and governance</li>
+<li class="fragment">Repeatable workflows</li>
+</ul></li>
+</ul>
+</section>
+<section id="demo-time" class="slide level2 center">
+<h2>Demo Time</h2>
+
+<img data-src="../src/images/a2d-mikes-04.png" style="width:80.0%" alt="GitHub Copilot agents screen" class="r-stretch"><ul>
+<li class="fragment">Show GitHub Copilot <strong>coding agents</strong> in action<br>
+</li>
+<li class="fragment">Walk through how A2D workflows are executed end-to-end<br>
+</li>
+<li class="fragment">Anchor the conversation in something tangible and working</li>
+</ul>
+</section>
+<section id="a2d-workflows-overview" class="slide level2 center">
+<h2>A2D Workflows – Overview</h2>
+
+<img data-src="../src/images/a2d-mikes-05.png" style="width:80.0%" alt="High-level A2D workflow diagram" class="r-stretch"><ul>
+<li class="fragment"><strong>GitHub &amp; GitHub Copilot</strong> – Core platform<br>
+</li>
+<li class="fragment"><strong>Model providers</strong> – OpenAI / Anthropic / Gemini<br>
+</li>
+<li class="fragment"><strong>A2D Artifacts</strong> – Agent definitions, archetypes, workflows<br>
+</li>
+<li class="fragment"><strong>A2D Subscription</strong> – Controlled access to IP &amp; tooling<br>
+</li>
+<li class="fragment"><strong>A2D Methodology</strong> – Ceremonies and ways of working</li>
+</ul>
+</section>
+<section id="foundation-github-a2d" class="slide level2 center">
+<h2>Foundation: GitHub &amp; A2D</h2>
+<ul>
+<li class="fragment">GitHub + GitHub Copilot + GitHub Coding Agents form the <strong>execution layer</strong><br>
+</li>
+<li class="fragment">We rely on:
+<ul>
+<li class="fragment">Repos, PRs, issues, projects, labels, releases<br>
+</li>
+<li class="fragment">Copilot’s <strong>agent orchestration</strong> and tool permissions<br>
+</li>
+</ul></li>
+<li class="fragment">Today, GitHub Coding Agents primarily use <strong>Claude Sonnet 4.5</strong> underneath</li>
+</ul>
+<h3 id="issue-templates">Issue Templates</h3>
+<ul>
+<li class="fragment">Written by humans <strong>for agents</strong><br>
+</li>
+<li class="fragment">Standardize:
+<ul>
+<li class="fragment">Requirements</li>
+<li class="fragment">Sizing</li>
+<li class="fragment">Labels &amp; priority</li>
+</ul></li>
+<li class="fragment">Make work <strong>machine-readable</strong> and consistent</li>
+</ul>
+</section>
+<section id="agent-definitions" class="slide level2 center">
+<h2>Agent Definitions</h2>
+<ul>
+<li class="fragment">Describe the <strong>type of work</strong> an agent should complete<br>
+</li>
+<li class="fragment">Configure:
+<ul>
+<li class="fragment">Access to MCP servers</li>
+<li class="fragment">Tools and permissions</li>
+<li class="fragment">Allowed workflows<br>
+</li>
+</ul></li>
+<li class="fragment">Examples:
+<ul>
+<li class="fragment"><code>[planner]</code>, <code>[interviewer]</code>, <code>[architect]</code></li>
+<li class="fragment"><code>[curator]</code>, <code>[workhorse]</code>, <code>[tester]</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="mcp-registries" class="slide level2 center">
+<h2>MCP Registries</h2>
+<ul>
+<li class="fragment"><strong>GitHub MCP Registry</strong> and <strong>OpenAI Connector Registry</strong><br>
+</li>
+<li class="fragment">Provide <strong>verified MCP servers</strong> for:
+<ul>
+<li class="fragment">GitHub</li>
+<li class="fragment">Figma and design tools</li>
+<li class="fragment">Azure / cloud</li>
+<li class="fragment">Other SaaS and APIs<br>
+</li>
+</ul></li>
+<li class="fragment">CodeLantern’s role:
+<ul>
+<li class="fragment">Curate</li>
+<li class="fragment">Validate</li>
+<li class="fragment">Certify MCPs as <strong>production-ready</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="archetypes" class="slide level2 center">
+<h2>Archetypes</h2>
+<ul>
+<li class="fragment">Blueprints for <strong>how agents should build software</strong><br>
+</li>
+<li class="fragment">Language &amp; framework specific:
+<ul>
+<li class="fragment">.NET, TypeScript, React, CSS</li>
+<li class="fragment">MudBlazor, Databricks, YAML</li>
+<li class="fragment">Terraform, Azure CLI, app archetypes<br>
+</li>
+</ul></li>
+<li class="fragment">Curated by <strong>expert consultants</strong> assisted by <code>[curator]</code> agents<br>
+</li>
+<li class="fragment">Enforce:
+<ul>
+<li class="fragment">Coding standards</li>
+<li class="fragment">Design patterns</li>
+<li class="fragment">Architectural principles</li>
+</ul></li>
+</ul>
+</section>
+<section id="workflows" class="slide level2 center">
+<h2>Workflows</h2>
+<ul>
+<li class="fragment">Defined, configured, and approved by the team<br>
+</li>
+<li class="fragment">Executed by agents, monitored by humans<br>
+</li>
+<li class="fragment">Examples:
+<ul>
+<li class="fragment"><code>[ux-design]</code>, <code>[code-design]</code>, <code>[issue-design]</code></li>
+<li class="fragment"><code>[implement]</code>, <code>[deploy]</code><br>
+</li>
+</ul></li>
+<li class="fragment">Each workflow binds:
+<ul>
+<li class="fragment">A goal</li>
+<li class="fragment">The agents</li>
+<li class="fragment">The humans</li>
+<li class="fragment">The artifacts created</li>
+</ul></li>
+</ul>
+</section>
+<section id="boards-analytics" class="slide level2 center">
+<h2>Boards &amp; Analytics</h2>
+<ul>
+<li class="fragment">A2D workflows surface as board items and analytics in GitHub<br>
+</li>
+<li class="fragment">Track:
+<ul>
+<li class="fragment">Throughput</li>
+<li class="fragment">Lead time</li>
+<li class="fragment">Agent performance<br>
+</li>
+</ul></li>
+<li class="fragment">Provide the telemetry needed to continuously refine the system</li>
+</ul>
+</section>
+<section id="component-definitions" class="slide level2 center">
+<h2>Component Definitions</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 66%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Work Item Templates</strong></td>
+<td>Issues, sub-issues, and PRs are structured consistently so agents can read/write them reliably.</td>
+</tr>
+<tr class="even">
+<td><strong>Agent Definitions</strong></td>
+<td>Describe agent roles and purpose, define allowed tools &amp; workflows, and reinforce use of archetypes and patterns.</td>
+</tr>
+<tr class="odd">
+<td><strong>Archetypes</strong></td>
+<td>Detailed guidance on frameworks and patterns agents must follow. Curated by experts with AI assistance.</td>
+</tr>
+<tr class="even">
+<td><strong>Workflows</strong></td>
+<td>Define what needs to be done, which agents &amp; humans are involved, and the expected outputs.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hiding-the-ip" class="slide level2 center">
+<h2>Hiding the IP</h2>
+
+<img data-src="../src/images/a2d-mikes-08.png" style="width:70.0%" alt="Abstract cube illustration representing hidden IP" class="r-stretch"><ul>
+<li class="fragment">Agents depend on <strong>definitions, archetypes, and workflows</strong> stored as Markdown<br>
+</li>
+<li class="fragment">Markdown is:
+<ul>
+<li class="fragment">Easy to read</li>
+<li class="fragment">Easy to copy</li>
+<li class="fragment">Hard to protect as proprietary IP<br>
+</li>
+</ul></li>
+<li class="fragment">We need to:
+<ul>
+<li class="fragment">Conceal and version these artifacts</li>
+<li class="fragment">Keep client copies in sync with a <strong>central source</strong></li>
+<li class="fragment">Offer controlled access to <strong>paying customers</strong></li>
+</ul></li>
+</ul>
+</section>
+<section id="conceptual-proposed-solution" class="slide level2 center">
+<h2>Conceptual Proposed Solution*</h2>
+<ul>
+<li class="fragment">Safeguard IP behind a <strong>dedicated CodeLantern MCP server</strong><br>
+</li>
+<li class="fragment">Publish that MCP server through the <strong>GitHub registry</strong><br>
+</li>
+<li class="fragment">Issue access tokens to <strong>subscribers</strong><br>
+</li>
+<li class="fragment">Support multiple versions:
+<ul>
+<li class="fragment">Backwards compatibility</li>
+<li class="fragment">Ability to evolve with MCP ecosystem changes<br>
+</li>
+</ul></li>
+</ul>
+<p>* This is a conceptual design; implementation details still to be validated.</p>
+</section>
+<section id="proposed-architecture" class="slide level2 center">
+<h2>Proposed Architecture</h2>
+
+<img data-src="../src/images/a2d-mikes-09.png" style="width:90.0%" alt="A2D proposed architecture diagram" class="r-stretch"><ul>
+<li class="fragment">Work item (GitHub issue) is assigned to an agent<br>
+</li>
+<li class="fragment">Agent opens a PR and starts a working session<br>
+</li>
+<li class="fragment">Client org keeps <strong>agent definitions</strong> under <code>/.github/agents</code><br>
+</li>
+<li class="fragment">MCP servers involved:
+<ul>
+<li class="fragment">GitHub MCP Registry</li>
+<li class="fragment">OpenAI Connector Registry</li>
+<li class="fragment">Figma / UX MCP</li>
+<li class="fragment">Azure MCP</li>
+<li class="fragment"><strong>CodeLantern MCP</strong> (hides archetype &amp; workflow IP)<br>
+</li>
+</ul></li>
+<li class="fragment">Agents execute workflows and submit work for <strong>human review</strong></li>
+</ul>
+</section>
+<section id="workflows-visual" class="slide level2 center">
+<h2>Workflows – Visual</h2>
+
+<img data-src="../src/images/a2d-mikes-10.png" style="width:60.0%" alt="Colorful binders representing workflows" class="r-stretch"><ul>
+<li class="fragment">Think of each workflow as a <strong>binder</strong>:
+<ul>
+<li class="fragment">Clear entry criteria</li>
+<li class="fragment">Defined steps</li>
+<li class="fragment">Expected outputs</li>
+</ul></li>
+<li class="fragment">A2D is a <strong>set of binders</strong> that teams can adopt and compose</li>
+</ul>
+</section>
+<section id="planning-workflow" class="slide level2 center">
+<h2>Planning Workflow</h2>
+
+<img data-src="../src/images/a2d-mikes-11.png" style="width:60.0%" alt="Planning meeting imagery with sticky notes" class="r-stretch"><ul>
+<li class="fragment">Uses the <strong>[planning-agent]</strong><br>
+</li>
+<li class="fragment">Responsibilities:
+<ul>
+<li class="fragment">Enhance descriptions &amp; acceptance criteria</li>
+<li class="fragment">Split large items into sub-items and tasks</li>
+<li class="fragment">Ask clarifying questions where needed<br>
+</li>
+</ul></li>
+<li class="fragment">Can recommend <strong>next workflows</strong> by analyzing:
+<ul>
+<li class="fragment">Repo structure</li>
+<li class="fragment">Existing issues</li>
+<li class="fragment">Nature of the work<br>
+</li>
+</ul></li>
+<li class="fragment">Outcome: a <strong>high-quality, agent-ready backlog</strong></li>
+</ul>
+</section>
+<section id="suggestion-workflow" class="slide level2 center">
+<h2>Suggestion Workflow</h2>
+
+<img data-src="../src/images/a2d-mikes-12.png" style="width:60.0%" alt="Suggestion workflow imagery" class="r-stretch"><ul>
+<li class="fragment">Scans:
+<ul>
+<li class="fragment">Current issues</li>
+<li class="fragment">TODOs</li>
+<li class="fragment">Markdown checklists</li>
+<li class="fragment">Test coverage gaps<br>
+</li>
+</ul></li>
+<li class="fragment">Produces:
+<ul>
+<li class="fragment">A simple work item summarizing <strong>what to work on next</strong><br>
+</li>
+</ul></li>
+<li class="fragment">Used by:
+<ul>
+<li class="fragment">Product owners</li>
+<li class="fragment">Architects<br>
+</li>
+</ul></li>
+<li class="fragment">Often powered by the same <strong>[planning-agent]</strong> under the hood</li>
+</ul>
+</section>
+<section id="user-interface-design-workflow-future" class="slide level2 center">
+<h2>User Interface Design Workflow (Future)</h2>
+
+<img data-src="../src/images/a2d-mikes-13.png" style="width:55.0%" alt="Person holding phone in front of whiteboard with UI sketches" class="r-stretch"><ul>
+<li class="fragment">Describe the UI that needs to be built<br>
+</li>
+<li class="fragment">Generate UI options using project archetypes:
+<ul>
+<li class="fragment">Material Design</li>
+<li class="fragment">MudBlazor</li>
+<li class="fragment">Tailwind, etc.<br>
+</li>
+</ul></li>
+<li class="fragment">Present options and refine with stakeholders<br>
+</li>
+<li class="fragment">Attach the chosen design to a new <strong>implementation work item</strong></li>
+</ul>
+</section>
+<section id="solution-design-analysis-workflow" class="slide level2 center">
+<h2>Solution Design &amp; Analysis Workflow</h2>
+
+<img data-src="../src/images/a2d-mikes-14.png" style="width:70.0%" alt="Magnifying glass over chart" class="r-stretch"><ul>
+<li class="fragment">Deep analysis across:
+<ul>
+<li class="fragment">Archetypes<br>
+</li>
+<li class="fragment">Current repository<br>
+</li>
+<li class="fragment">Prior problem statements<br>
+</li>
+</ul></li>
+<li class="fragment">Produces 2–3 design options with:
+<ul>
+<li class="fragment">Detailed approaches<br>
+</li>
+<li class="fragment">Code samples<br>
+</li>
+<li class="fragment">Markdown documentation<br>
+</li>
+</ul></li>
+<li class="fragment">Scores options and makes a recommendation<br>
+</li>
+<li class="fragment">Also advises on <strong>timing</strong>:
+<ul>
+<li class="fragment">Do it now vs.&nbsp;defer</li>
+</ul></li>
+</ul>
+</section>
+<section id="implement-workflow" class="slide level2 center">
+<h2>Implement Workflow</h2>
+
+<img data-src="../src/images/a2d-mikes-15.png" style="width:70.0%" alt="Colorful abstract background with callouts" class="r-stretch"><ul>
+<li class="fragment">This is the <strong>workhorse</strong> of the system<br>
+</li>
+<li class="fragment">A <strong>[coder] agent</strong> is instructed to:
+<ul>
+<li class="fragment">Be concise and efficient with changes<br>
+</li>
+<li class="fragment">Minimize refactoring unless requested<br>
+</li>
+<li class="fragment">Respect existing patterns and decisions<br>
+</li>
+<li class="fragment">Write appropriate unit tests<br>
+</li>
+<li class="fragment">Produce well-documented PRs with screenshots where helpful</li>
+</ul></li>
+</ul>
+</section>
+<section id="deployment-workflow" class="slide level2 center">
+<h2>Deployment Workflow</h2>
+
+<img data-src="../src/images/a2d-mikes-16.png" style="width:70.0%" alt="Cloud and infrastructure themed illustration" class="r-stretch"><ul>
+<li class="fragment">Uses a <strong>[deployment] agent</strong> with skills in:
+<ul>
+<li class="fragment">Terraform</li>
+<li class="fragment">Azure CLI</li>
+<li class="fragment">YAML</li>
+<li class="fragment">GitHub Actions<br>
+</li>
+</ul></li>
+<li class="fragment">Responsibilities:
+<ul>
+<li class="fragment">Inspect solution for deployment readiness<br>
+</li>
+<li class="fragment">Create Terraform and supporting scripts<br>
+</li>
+<li class="fragment">Ensure environment consistency<br>
+</li>
+<li class="fragment">Keep secrets safe and managed<br>
+</li>
+<li class="fragment">Enable repeatable deployments</li>
+</ul></li>
+</ul>
+</section>
+<section id="workflow-status-mvp-view" class="slide level2 center">
+<h2>Workflow Status (MVP View)</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 48%">
+<col style="width: 38%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Workflow</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Planning</strong></td>
+<td>In Progress (~75%)</td>
+<td>Enhances work items; needs tighter verbosity and better respect for PR-approval gates.</td>
+</tr>
+<tr class="even">
+<td><strong>Solution Design</strong></td>
+<td>In Progress (~80%)</td>
+<td>Compares paths and recommends one; excellent docs but a bit verbose.</td>
+</tr>
+<tr class="odd">
+<td><strong>Suggestion</strong></td>
+<td>In Progress (~60%)</td>
+<td>Prototype that recommends next work; needs refinement.</td>
+</tr>
+<tr class="even">
+<td><strong>User Interface Design</strong></td>
+<td>Planning (~25%)</td>
+<td>Will integrate with Figma/UX MCPs.</td>
+</tr>
+<tr class="odd">
+<td><strong>Implementation</strong></td>
+<td>In Progress (~90%)</td>
+<td>Most mature; produces concise, tested code with strong PRs.</td>
+</tr>
+<tr class="even">
+<td><strong>Deployment</strong></td>
+<td>Planning (~25%)</td>
+<td>Good scripts, needs stronger understanding of workflows and approvals.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methodology-definition" class="slide level2 center">
+<h2>Methodology Definition</h2>
+<ul>
+<li class="fragment">As important as the technology itself<br>
+</li>
+<li class="fragment">A2D will define <strong>ceremonies</strong> similar to Agile, but with shorter cycles<br>
+</li>
+<li class="fragment">Likely better aligned with <strong>Kanban</strong> than strict sprints<br>
+</li>
+<li class="fragment">Daily flow typically:
+<ol type="1">
+<li class="fragment"><strong>Plan</strong> – morning planning with agents<br>
+</li>
+<li class="fragment"><strong>Design</strong> – refine approaches<br>
+</li>
+<li class="fragment"><strong>Implement</strong> – coding agents execute<br>
+</li>
+<li class="fragment"><strong>Review</strong> – humans review &amp; approve<br>
+</li>
+<li class="fragment"><strong>Deploy</strong> – promote safely<br>
+</li>
+<li class="fragment"><strong>Verify</strong> – validate outcomes<br>
+</li>
+</ol></li>
+<li class="fragment">Then repeat</li>
+</ul>
+</section>
+<section id="the-human-role" class="slide level2 center">
+<h2>The Human Role</h2>
+
+<img data-src="../src/images/a2d-mikes-19.png" style="width:60.0%" alt="Wooden figures representing people" class="r-stretch"><ul>
+<li class="fragment">Humans remain central:
+<ul>
+<li class="fragment">Provide context</li>
+<li class="fragment">Set direction &amp; priorities</li>
+<li class="fragment">Give positive and negative feedback<br>
+</li>
+<li class="fragment">Review and approve all changes<br>
+</li>
+</ul></li>
+<li class="fragment">A2D is about <strong>augmenting</strong>, not replacing, the team</li>
+</ul>
+</section>
+<section id="risks" class="slide level2 center">
+<h2>Risks</h2>
+
+<img data-src="../src/images/a2d-mikes-20.png" style="width:60.0%" alt="Risk and warning themed illustration" class="r-stretch"><ul>
+<li class="fragment">GitHub Copilot and MCP ecosystem are <strong>moving fast</strong><br>
+</li>
+<li class="fragment">Many features are still in <strong>preview</strong><br>
+</li>
+<li class="fragment">Registries and servers are unstable; things break frequently<br>
+</li>
+<li class="fragment">GitHub keeps tight control over agents and currently:
+<ul>
+<li class="fragment">Limits coding agents largely to <strong>Anthropic Sonnet</strong><br>
+</li>
+</ul></li>
+<li class="fragment">Licensing:
+<ul>
+<li class="fragment">$15–$30 USD per user per month today<br>
+</li>
+<li class="fragment">Unlikely to stay that low long-term<br>
+</li>
+</ul></li>
+<li class="fragment">Agent drift:
+<ul>
+<li class="fragment">Same inputs can produce slightly different outputs<br>
+</li>
+<li class="fragment">Governance and guardrails are essential</li>
+</ul></li>
+</ul>
+</section>
+<section id="phased-approach" class="slide level2 center">
+<h2>Phased Approach</h2>
+
+<img data-src="../src/images/a2d-mikes-21.png" style="width:70.0%" alt="Roadmap illustration" class="r-stretch"><ul>
+<li class="fragment">Start as a <strong>services company</strong> while artifacts mature<br>
+</li>
+<li class="fragment">Package mature artifacts as a <strong>subscription offering</strong> later<br>
+</li>
+<li class="fragment">Allow time for:
+<ul>
+<li class="fragment">MCP landscape to stabilize<br>
+</li>
+<li class="fragment">Archetypes &amp; workflows to be battle-tested<br>
+</li>
+</ul></li>
+<li class="fragment">Generate revenue while:
+<ul>
+<li class="fragment">Building &amp; testing artifacts<br>
+</li>
+<li class="fragment">Proving the CodeLantern MCP concept</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-of-funds" class="slide level2 center">
+<h2>Use of Funds</h2>
+
+<img data-src="../src/images/a2d-mikes-22.png" style="width:90.0%" alt="Five step funding plan diagram" class="r-stretch"><ol type="1">
+<li class="fragment">Secure key resources (Jeff, PVZ, Nick)<br>
+</li>
+<li class="fragment">Focus full-time on A2D (modest salary)<br>
+</li>
+<li class="fragment">Build artifacts &amp; workflows, plus custom MCP to hide IP<br>
+</li>
+<li class="fragment">Create demos &amp; training to attract delivery consultants<br>
+</li>
+<li class="fragment">Cover software, operations, and marketing (licenses, conferences, brand, sales collateral)</li>
+</ol>
+</section>
+<section id="next-steps" class="slide level2 center">
+<h2>Next Steps</h2>
+
+<img data-src="../src/images/a2d-mikes-23.png" style="width:70.0%" alt="Checklist illustration" class="r-stretch"><ul>
+<li class="fragment">Work on <strong>funding</strong> and structure<br>
+</li>
+<li class="fragment">Secure <strong>Jeff, Nick, Peter</strong> with the right mix of base + upside<br>
+</li>
+<li class="fragment">Publish a working <strong>MVP demo</strong>:
+<ul>
+<li class="fragment">Planning agent</li>
+<li class="fragment">Architect agent</li>
+<li class="fragment">Coding agent</li>
+<li class="fragment">Deployment agent<br>
+</li>
+</ul></li>
+<li class="fragment">Document &amp; diagram workflows to:
+<ul>
+<li class="fragment">Attract delivery consultants</li>
+<li class="fragment">Land first customers<br>
+</li>
+</ul></li>
+<li class="fragment">Build a <strong>Designer workflow</strong> demo for extra “wow”<br>
+</li>
+<li class="fragment">Implement the <strong>custom MCP</strong> to hide IP</li>
+</ul>
+</section>
+<section id="team-compensation-summary" class="slide level2 center">
+<h2>Team &amp; Compensation (Summary)</h2>
+
+<img data-src="../src/images/a2d-mikes-24.png" style="width:80.0%" alt="Team and budget illustration" class="r-stretch"><ul>
+<li class="fragment"><strong>Nick Van Exan</strong> – Senior engineer; target ~15K/month, pro-rated; equity/bonus to close gap<br>
+</li>
+<li class="fragment"><strong>Jeff Zado</strong> – Sales/strategy; could start at ~5K/month + commission + upside<br>
+</li>
+<li class="fragment"><strong>Peter Vander Zouwe</strong> – Sales/strategy; needs ~8K/month base + commission; open to equity<br>
+</li>
+<li class="fragment">Use <strong>commission-to-equity conversion</strong> to:
+<ul>
+<li class="fragment">Align incentives</li>
+<li class="fragment">Minimize burn</li>
+<li class="fragment">Reward early builders</li>
+</ul></li>
+</ul>
+</section>
+<section id="thank-you" class="slide level2 center">
+<h2>Thank You</h2>
+<p>Questions? Discussion?</p>
+<aside class="notes">
+<p>Use this slide to open Q&amp;A and deeper technical or financial discussions depending on the audience.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="../images/codelantern-logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>© 2025 CodeLantern.AI</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1920,
+
+        height: 1080,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+
+        maxScale: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

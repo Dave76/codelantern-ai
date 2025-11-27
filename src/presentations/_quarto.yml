@@ -11,7 +11,7 @@ format:
     show-notes: false
     preview-links: auto
     logo: ../images/codelantern-logo.png
-    footer: "© 2025 TechLantern / CodeLantern.AI"
+    footer: "© 2025 CodeLantern.AI"
     center: true
     width: 1920
     height: 1080
