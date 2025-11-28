@@ -7,3 +7,6 @@ src/presentations/.quarto/
 # Temporary Office files
 office/~*.pptx
 office/~*.docx
+
+# MCP configuration (contains tokens/secrets)
+.vscode/mcp.json
