@@ -7,6 +7,8 @@ format: revealjs
 
 ## A2D
 
+![A2D Logo](img/a2d-logo-02.png){width="300" fig-align="center"}
+
 AI Augmented Development  
 AI Assisted Development
 

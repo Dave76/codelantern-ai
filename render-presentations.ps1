@@ -76,6 +76,23 @@ if (-not (Test-Path $outputDir)) {
     Write-Host "✅ Created output directory: $outputDir" -ForegroundColor Green
 }
 
+# Function to copy images to bin folder for deployment
+function Copy-PresentationImages {
+    $srcImagesDir = Join-Path $repoRoot "src\images"
+    $binImagesDir = Join-Path $repoRoot "bin\presentations\img"
+    
+    if (Test-Path $srcImagesDir) {
+        if (-not (Test-Path $binImagesDir)) {
+            New-Item -Path $binImagesDir -ItemType Directory -Force | Out-Null
+        }
+        
+        # Copy all images
+        Copy-Item -Path "$srcImagesDir\*" -Destination $binImagesDir -Recurse -Force
+        $imageCount = (Get-ChildItem -Path $srcImagesDir -File).Count
+        Write-Host "✅ Copied $imageCount images to bin\presentations\img\" -ForegroundColor Green
+    }
+}
+
 # Normalize the presentation file path if provided
 if ($PresentationFile) {
     # If path starts with .\src\presentations\ or src\presentations\, extract just the filename
@@ -124,6 +141,9 @@ if ($Preview) {
             $fileName = [System.IO.Path]::GetFileNameWithoutExtension($PresentationFile)
             $outputPath = Join-Path $outputDir "$fileName.html"
             Write-Host "✅ Successfully rendered: $outputPath" -ForegroundColor Green
+            
+            # Copy images for deployment
+            Copy-PresentationImages
         } else {
             Write-Host "❌ Error rendering presentation" -ForegroundColor Red
             exit $LASTEXITCODE
@@ -134,6 +154,9 @@ if ($Preview) {
         
         if ($LASTEXITCODE -eq 0) {
             Write-Host "✅ Successfully rendered all presentations to: $outputDir" -ForegroundColor Green
+            
+            # Copy images for deployment
+            Copy-PresentationImages
             
             # List generated files
             $generatedFiles = Get-ChildItem -Path $outputDir -Filter "*.html"
