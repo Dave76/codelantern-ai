@@ -1,25 +1,18 @@
 ---
-title: "A2D – AI-Augmented Development"
-subtitle: "Strategy & Funding Deck"
+title: "A2D"
+subtitle: "AI Assisted Development"
 author: "David Judd"
 format: revealjs
 ---
 
-<!--
-Image expectations (relative to this file if stored in /presentations):
+## {background-color="white"}
 
-../src/images/a2d-mikes-01.png
-../src/images/a2d-mikes-02.png
-../src/images/a2d-mikes-03.png
-...
--->
+![](img/a2d-logo-02.png){width="300" fig-align="center"}
 
-## A2D
-
+::: {style="text-align: center;"}
 AI Augmented Development  
 AI Assisted Development
-
-![](../src/images/a2d-mikes-01.png){fig-alt="Title slide background" width="80%"}
+:::
 
 ---
 
@@ -34,13 +27,9 @@ AI Assisted Development
 - Great for prototypes and quick experiments, but weaker on governance and repeatability
 :::
 
-![](../src/images/a2d-mikes-02.png){fig-alt="Vibe coding marketing screenshots" width="70%"}
-
 ---
 
 ## A2D on the spectrum
-
-![](../src/images/a2d-mikes-03.png){fig-alt="AI development spectrum with A2D between traditional dev and vibe coding" width="90%"}
 
 ::: {.incremental}
 - **Traditional Development** – Little or no AI assistance  
@@ -55,8 +44,6 @@ AI Assisted Development
 
 ## Demo Time
 
-![](../src/images/a2d-mikes-04.png){fig-alt="GitHub Copilot agents screen" width="80%"}
-
 ::: {.incremental}
 - Show GitHub Copilot **coding agents** in action  
 - Walk through how A2D workflows are executed end-to-end  
@@ -66,8 +53,6 @@ AI Assisted Development
 ---
 
 ## A2D Workflows – Overview
-
-![](../src/images/a2d-mikes-05.png){fig-alt="High-level A2D workflow diagram" width="80%"}
 
 ::: {.incremental}
 - **GitHub & GitHub Copilot** – Core platform  
@@ -194,7 +179,6 @@ AI Assisted Development
 
 ## Hiding the IP
 
-![](../src/images/a2d-mikes-08.png){fig-alt="Abstract cube illustration representing hidden IP" width="70%"}
 
 ::: {.incremental}
 - Agents depend on **definitions, archetypes, and workflows** stored as Markdown  
@@ -227,7 +211,6 @@ AI Assisted Development
 
 ## Proposed Architecture
 
-![](../src/images/a2d-mikes-09.png){fig-alt="A2D proposed architecture diagram" width="90%"}
 
 ::: {.incremental}
 - Work item (GitHub issue) is assigned to an agent  
@@ -246,7 +229,6 @@ AI Assisted Development
 
 ## Workflows – Visual
 
-![](../src/images/a2d-mikes-10.png){fig-alt="Colorful binders representing workflows" width="60%"}
 
 ::: {.incremental}
 - Think of each workflow as a **binder**:
@@ -260,7 +242,6 @@ AI Assisted Development
 
 ## Planning Workflow
 
-![](../src/images/a2d-mikes-11.png){fig-alt="Planning meeting imagery with sticky notes" width="60%"}
 
 ::: {.incremental}
 - Uses the **[planning-agent]**  
@@ -279,7 +260,6 @@ AI Assisted Development
 
 ## Suggestion Workflow
 
-![](../src/images/a2d-mikes-12.png){fig-alt="Suggestion workflow imagery" width="60%"}
 
 ::: {.incremental}
 - Scans:
@@ -299,7 +279,6 @@ AI Assisted Development
 
 ## User Interface Design Workflow (Future)
 
-![](../src/images/a2d-mikes-13.png){fig-alt="Person holding phone in front of whiteboard with UI sketches" width="55%"}
 
 ::: {.incremental}
 - Describe the UI that needs to be built  
@@ -315,7 +294,6 @@ AI Assisted Development
 
 ## Solution Design & Analysis Workflow
 
-![](../src/images/a2d-mikes-14.png){fig-alt="Magnifying glass over chart" width="70%"}
 
 ::: {.incremental}
 - Deep analysis across:
@@ -335,7 +313,6 @@ AI Assisted Development
 
 ## Implement Workflow
 
-![](../src/images/a2d-mikes-15.png){fig-alt="Colorful abstract background with callouts" width="70%"}
 
 ::: {.incremental}
 - This is the **workhorse** of the system  
@@ -351,7 +328,6 @@ AI Assisted Development
 
 ## Deployment Workflow
 
-![](../src/images/a2d-mikes-16.png){fig-alt="Cloud and infrastructure themed illustration" width="70%"}
 
 ::: {.incremental}
 - Uses a **[deployment] agent** with skills in:
@@ -402,7 +378,6 @@ AI Assisted Development
 
 ## The Human Role
 
-![](../src/images/a2d-mikes-19.png){fig-alt="Wooden figures representing people" width="60%"}
 
 ::: {.incremental}
 - Humans remain central:
@@ -417,7 +392,6 @@ AI Assisted Development
 
 ## Risks
 
-![](../src/images/a2d-mikes-20.png){fig-alt="Risk and warning themed illustration" width="60%"}
 
 ::: {.incremental}
 - GitHub Copilot and MCP ecosystem are **moving fast**  
@@ -437,8 +411,6 @@ AI Assisted Development
 
 ## Phased Approach
 
-![](../src/images/a2d-mikes-21.png){fig-alt="Roadmap illustration" width="70%"}
-
 ::: {.incremental}
 - Start as a **services company** while artifacts mature  
 - Package mature artifacts as a **subscription offering** later  
@@ -448,57 +420,6 @@ AI Assisted Development
 - Generate revenue while:
   - Building & testing artifacts  
   - Proving the CodeLantern MCP concept
-:::
-
----
-
-## Use of Funds
-
-![](../src/images/a2d-mikes-22.png){fig-alt="Five step funding plan diagram" width="90%"}
-
-::: {.incremental}
-1. Secure key resources (Jeff, PVZ, Nick)  
-2. Focus full-time on A2D (modest salary)  
-3. Build artifacts & workflows, plus custom MCP to hide IP  
-4. Create demos & training to attract delivery consultants  
-5. Cover software, operations, and marketing (licenses, conferences, brand, sales collateral)
-:::
-
----
-
-## Next Steps
-
-![](../src/images/a2d-mikes-23.png){fig-alt="Checklist illustration" width="70%"}
-
-::: {.incremental}
-- Work on **funding** and structure  
-- Secure **Jeff, Nick, Peter** with the right mix of base + upside  
-- Publish a working **MVP demo**:
-  - Planning agent
-  - Architect agent
-  - Coding agent
-  - Deployment agent  
-- Document & diagram workflows to:
-  - Attract delivery consultants
-  - Land first customers  
-- Build a **Designer workflow** demo for extra “wow”  
-- Implement the **custom MCP** to hide IP
-:::
-
----
-
-## Team & Compensation (Summary)
-
-![](../src/images/a2d-mikes-24.png){fig-alt="Team and budget illustration" width="80%"}
-
-::: {.incremental}
-- **Nick Van Exan** – Senior engineer; target ~15K/month, pro-rated; equity/bonus to close gap  
-- **Jeff Zado** – Sales/strategy; could start at ~5K/month + commission + upside  
-- **Peter Vander Zouwe** – Sales/strategy; needs ~8K/month base + commission; open to equity  
-- Use **commission-to-equity conversion** to:
-  - Align incentives
-  - Minimize burn
-  - Reward early builders
 :::
 
 ---

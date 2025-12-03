@@ -90,13 +90,13 @@ Transforming software development through AI-augmented collaboration.
 
 ::: {.column width="40%"}
 ::: {.r-stack}
-![](../../src/images/codelantern-logo-01.png){.fragment .fade-in-then-out fragment-index=1}
+![](img/codelantern-logo-01.png){.fragment .fade-in-then-out fragment-index=1}
 
-![](../../src/images/codelantern-logo-02.png){.fragment .fade-in-then-out fragment-index=2}
+![](img/codelantern-logo-02.png){.fragment .fade-in-then-out fragment-index=2}
 
-![](../../src/images/codelantern-logo-03.png){.fragment .fade-in-then-out fragment-index=3}
+![](img/codelantern-logo-03.png){.fragment .fade-in-then-out fragment-index=3}
 
-![](../../src/images/codelantern-logo-04.png){.fragment .fade-in fragment-index=4}
+![](img/codelantern-logo-04.png){.fragment .fade-in fragment-index=4}
 :::
 :::
 

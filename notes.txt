@@ -1,0 +1,49 @@
+Styles
+
+- In razor components, prefer using [Inject] in the code section vs @inject at the top
+- In razor components and classes in general fields should use _fieldname and fields should never be public
+- Do not define styles inside components and no styled components. Move to common.css for better debugging/write/test cycle
+<style>
+    .measurement-display {
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+    }
+</style>
+
+
+MeasurementDisplay should likely not display decimal points for mm if the user preference for mm is set to >= 1.0
+
+For the Endgrain Rows configuration, we need to add the concept of row before, row after, or just rows inbetween.
+
+
+There is a nicety of working through a PR with a local agent using VS Code.
+- One a PR is ready for review I like pulling it into VS Code
+- I can then have a conversation (chat) with the agent locally to make any changes
+- Changes are concise and committed one at a time
+Once complete, you can go back to the PR and have the GitHub agent update the PR description to capture an important changes
+- this is actually much quicker for iterations
+
+
+New Workflow (single ticket using neo agent, who can plan, design, code, test)
+- Efficient. Accomplish same work, but use a single ticket and PR, minimize co-pilot sessions.
+- Create work-item with a clear description and label "planning"
+- Assign to agent, kickoff PR
+- Agent should see the planning label and understand that a plan has not been created and should create a concise, but detailed draft in the PR. The PR must have a call to action at the end. "Should I go ahead and update the Issue?"
+- The agent should then wait for a user to review and respond (explicit approval)
+- GitHub issue should now be updated, with potential sub-issues linked to the parent issue
+- Agent should then again ask for approval: Is the Issue to your liking? Should I start work?
+- Yes, please start implementation.
+- Review, as regular pull request.
+
+
+
+Ok, so one thing about adding these STOP instructions, which are required for human approval in the process, it will definitely increase the number of premium sessions and thus increase cost.
+Draft Plan (Min one session, plus any feedback cycles)
+Create Update Issues (Min one session, plus any feedback cycles)
+Complete Work (Min one session, plus any feedback cycles)
+
+
+
+
+
+
