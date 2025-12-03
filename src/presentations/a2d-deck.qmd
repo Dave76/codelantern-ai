@@ -1,16 +1,18 @@
 ---
-title: "A2D – AI-Augmented Development"
-subtitle: "Strategy & Funding Deck"
+title: "A2D"
+subtitle: "AI Assisted Development"
 author: "David Judd"
 format: revealjs
 ---
 
-## A2D
+## {background-color="white"}
 
-![A2D Logo](img/a2d-logo-02.png){width="300" fig-align="center"}
+![](img/a2d-logo-02.png){width="300" fig-align="center"}
 
+::: {style="text-align: center;"}
 AI Augmented Development  
 AI Assisted Development
+:::
 
 ---
 
@@ -409,7 +411,6 @@ AI Assisted Development
 
 ## Phased Approach
 
-
 ::: {.incremental}
 - Start as a **services company** while artifacts mature  
 - Package mature artifacts as a **subscription offering** later  
@@ -419,54 +420,6 @@ AI Assisted Development
 - Generate revenue while:
   - Building & testing artifacts  
   - Proving the CodeLantern MCP concept
-:::
-
----
-
-## Use of Funds
-
-
-::: {.incremental}
-1. Secure key resources (Jeff, PVZ, Nick)  
-2. Focus full-time on A2D (modest salary)  
-3. Build artifacts & workflows, plus custom MCP to hide IP  
-4. Create demos & training to attract delivery consultants  
-5. Cover software, operations, and marketing (licenses, conferences, brand, sales collateral)
-:::
-
----
-
-## Next Steps
-
-
-::: {.incremental}
-- Work on **funding** and structure  
-- Secure **Jeff, Nick, Peter** with the right mix of base + upside  
-- Publish a working **MVP demo**:
-  - Planning agent
-  - Architect agent
-  - Coding agent
-  - Deployment agent  
-- Document & diagram workflows to:
-  - Attract delivery consultants
-  - Land first customers  
-- Build a **Designer workflow** demo for extra “wow”  
-- Implement the **custom MCP** to hide IP
-:::
-
----
-
-## Team & Compensation (Summary)
-
-
-::: {.incremental}
-- **Nick Van Exan** – Senior engineer; target ~15K/month, pro-rated; equity/bonus to close gap  
-- **Jeff Zado** – Sales/strategy; could start at ~5K/month + commission + upside  
-- **Peter Vander Zouwe** – Sales/strategy; needs ~8K/month base + commission; open to equity  
-- Use **commission-to-equity conversion** to:
-  - Align incentives
-  - Minimize burn
-  - Reward early builders
 :::
 
 ---

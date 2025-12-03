@@ -107,189 +107,189 @@
   {
     "objectID": "a2d-deck.html#a2d",
     "href": "a2d-deck.html#a2d",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "A2D",
-    "text": "A2D\n\n\n\nA2D Logo\n\n\nAI Augmented Development\nAI Assisted Development"
+    "text": "A2D\n\n\n\nA2D Logo\n\n\n\nAI Augmented Development\nAI Assisted Development"
   },
   {
     "objectID": "a2d-deck.html#a2d-is-not-vibe-coding",
     "href": "a2d-deck.html#a2d-is-not-vibe-coding",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "A2D is not vibe coding",
     "text": "A2D is not vibe coding\nVibe Coding — Definition\n\nDevelopment approach where the human sets the direction and the AI handles the details\n\nEmphasis on speed, experimentation, and “vibes” rather than clear structure\n\nHeavy reliance on natural-language prompts with minimal scaffolding\n\nGreat for prototypes and quick experiments, but weaker on governance and repeatability"
   },
   {
     "objectID": "a2d-deck.html#a2d-on-the-spectrum",
     "href": "a2d-deck.html#a2d-on-the-spectrum",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "A2D on the spectrum",
     "text": "A2D on the spectrum\n\nTraditional Development – Little or no AI assistance\n\nVibe Coding – AI drives most implementation; humans steer loosely\n\nA2D – Structured collaboration between humans and AI agents, with:\n\nClear roles\nGuardrails and governance\nRepeatable workflows"
   },
   {
     "objectID": "a2d-deck.html#demo-time",
     "href": "a2d-deck.html#demo-time",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Demo Time",
     "text": "Demo Time\n\nShow GitHub Copilot coding agents in action\n\nWalk through how A2D workflows are executed end-to-end\n\nAnchor the conversation in something tangible and working"
   },
   {
     "objectID": "a2d-deck.html#a2d-workflows-overview",
     "href": "a2d-deck.html#a2d-workflows-overview",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "A2D Workflows – Overview",
     "text": "A2D Workflows – Overview\n\nGitHub & GitHub Copilot – Core platform\n\nModel providers – OpenAI / Anthropic / Gemini\n\nA2D Artifacts – Agent definitions, archetypes, workflows\n\nA2D Subscription – Controlled access to IP & tooling\n\nA2D Methodology – Ceremonies and ways of working"
   },
   {
     "objectID": "a2d-deck.html#foundation-github-a2d",
     "href": "a2d-deck.html#foundation-github-a2d",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Foundation: GitHub & A2D",
     "text": "Foundation: GitHub & A2D\n\nGitHub + GitHub Copilot + GitHub Coding Agents form the execution layer\n\nWe rely on:\n\nRepos, PRs, issues, projects, labels, releases\n\nCopilot’s agent orchestration and tool permissions\n\n\nToday, GitHub Coding Agents primarily use Claude Sonnet 4.5 underneath\n\nIssue Templates\n\nWritten by humans for agents\n\nStandardize:\n\nRequirements\nSizing\nLabels & priority\n\nMake work machine-readable and consistent"
   },
   {
     "objectID": "a2d-deck.html#agent-definitions",
     "href": "a2d-deck.html#agent-definitions",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Agent Definitions",
     "text": "Agent Definitions\n\nDescribe the type of work an agent should complete\n\nConfigure:\n\nAccess to MCP servers\nTools and permissions\nAllowed workflows\n\n\nExamples:\n\n[planner], [interviewer], [architect]\n[curator], [workhorse], [tester]"
   },
   {
     "objectID": "a2d-deck.html#mcp-registries",
     "href": "a2d-deck.html#mcp-registries",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "MCP Registries",
     "text": "MCP Registries\n\nGitHub MCP Registry and OpenAI Connector Registry\n\nProvide verified MCP servers for:\n\nGitHub\nFigma and design tools\nAzure / cloud\nOther SaaS and APIs\n\n\nCodeLantern’s role:\n\nCurate\nValidate\nCertify MCPs as production-ready"
   },
   {
     "objectID": "a2d-deck.html#archetypes",
     "href": "a2d-deck.html#archetypes",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Archetypes",
     "text": "Archetypes\n\nBlueprints for how agents should build software\n\nLanguage & framework specific:\n\n.NET, TypeScript, React, CSS\nMudBlazor, Databricks, YAML\nTerraform, Azure CLI, app archetypes\n\n\nCurated by expert consultants assisted by [curator] agents\n\nEnforce:\n\nCoding standards\nDesign patterns\nArchitectural principles"
   },
   {
     "objectID": "a2d-deck.html#workflows",
     "href": "a2d-deck.html#workflows",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Workflows",
     "text": "Workflows\n\nDefined, configured, and approved by the team\n\nExecuted by agents, monitored by humans\n\nExamples:\n\n[ux-design], [code-design], [issue-design]\n[implement], [deploy]\n\n\nEach workflow binds:\n\nA goal\nThe agents\nThe humans\nThe artifacts created"
   },
   {
     "objectID": "a2d-deck.html#boards-analytics",
     "href": "a2d-deck.html#boards-analytics",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Boards & Analytics",
     "text": "Boards & Analytics\n\nA2D workflows surface as board items and analytics in GitHub\n\nTrack:\n\nThroughput\nLead time\nAgent performance\n\n\nProvide the telemetry needed to continuously refine the system"
   },
   {
     "objectID": "a2d-deck.html#component-definitions",
     "href": "a2d-deck.html#component-definitions",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Component Definitions",
     "text": "Component Definitions\n\n\n\n\n\n\n\nComponent\nDescription\n\n\n\n\nWork Item Templates\nIssues, sub-issues, and PRs are structured consistently so agents can read/write them reliably.\n\n\nAgent Definitions\nDescribe agent roles and purpose, define allowed tools & workflows, and reinforce use of archetypes and patterns.\n\n\nArchetypes\nDetailed guidance on frameworks and patterns agents must follow. Curated by experts with AI assistance.\n\n\nWorkflows\nDefine what needs to be done, which agents & humans are involved, and the expected outputs."
   },
   {
     "objectID": "a2d-deck.html#hiding-the-ip",
     "href": "a2d-deck.html#hiding-the-ip",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Hiding the IP",
     "text": "Hiding the IP\n\nAgents depend on definitions, archetypes, and workflows stored as Markdown\n\nMarkdown is:\n\nEasy to read\nEasy to copy\nHard to protect as proprietary IP\n\n\nWe need to:\n\nConceal and version these artifacts\nKeep client copies in sync with a central source\nOffer controlled access to paying customers"
   },
   {
     "objectID": "a2d-deck.html#conceptual-proposed-solution",
     "href": "a2d-deck.html#conceptual-proposed-solution",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Conceptual Proposed Solution*",
     "text": "Conceptual Proposed Solution*\n\nSafeguard IP behind a dedicated CodeLantern MCP server\n\nPublish that MCP server through the GitHub registry\n\nIssue access tokens to subscribers\n\nSupport multiple versions:\n\nBackwards compatibility\nAbility to evolve with MCP ecosystem changes\n\n\n\n* This is a conceptual design; implementation details still to be validated."
   },
   {
     "objectID": "a2d-deck.html#proposed-architecture",
     "href": "a2d-deck.html#proposed-architecture",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Proposed Architecture",
     "text": "Proposed Architecture\n\nWork item (GitHub issue) is assigned to an agent\n\nAgent opens a PR and starts a working session\n\nClient org keeps agent definitions under /.github/agents\n\nMCP servers involved:\n\nGitHub MCP Registry\nOpenAI Connector Registry\nFigma / UX MCP\nAzure MCP\nCodeLantern MCP (hides archetype & workflow IP)\n\n\nAgents execute workflows and submit work for human review"
   },
   {
     "objectID": "a2d-deck.html#workflows-visual",
     "href": "a2d-deck.html#workflows-visual",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Workflows – Visual",
     "text": "Workflows – Visual\n\nThink of each workflow as a binder:\n\nClear entry criteria\nDefined steps\nExpected outputs\n\nA2D is a set of binders that teams can adopt and compose"
   },
   {
     "objectID": "a2d-deck.html#planning-workflow",
     "href": "a2d-deck.html#planning-workflow",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Planning Workflow",
     "text": "Planning Workflow\n\nUses the [planning-agent]\n\nResponsibilities:\n\nEnhance descriptions & acceptance criteria\nSplit large items into sub-items and tasks\nAsk clarifying questions where needed\n\n\nCan recommend next workflows by analyzing:\n\nRepo structure\nExisting issues\nNature of the work\n\n\nOutcome: a high-quality, agent-ready backlog"
   },
   {
     "objectID": "a2d-deck.html#suggestion-workflow",
     "href": "a2d-deck.html#suggestion-workflow",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Suggestion Workflow",
     "text": "Suggestion Workflow\n\nScans:\n\nCurrent issues\nTODOs\nMarkdown checklists\nTest coverage gaps\n\n\nProduces:\n\nA simple work item summarizing what to work on next\n\n\nUsed by:\n\nProduct owners\nArchitects\n\n\nOften powered by the same [planning-agent] under the hood"
   },
   {
     "objectID": "a2d-deck.html#user-interface-design-workflow-future",
     "href": "a2d-deck.html#user-interface-design-workflow-future",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "User Interface Design Workflow (Future)",
     "text": "User Interface Design Workflow (Future)\n\nDescribe the UI that needs to be built\n\nGenerate UI options using project archetypes:\n\nMaterial Design\nMudBlazor\nTailwind, etc.\n\n\nPresent options and refine with stakeholders\n\nAttach the chosen design to a new implementation work item"
   },
   {
     "objectID": "a2d-deck.html#solution-design-analysis-workflow",
     "href": "a2d-deck.html#solution-design-analysis-workflow",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Solution Design & Analysis Workflow",
     "text": "Solution Design & Analysis Workflow\n\nDeep analysis across:\n\nArchetypes\n\nCurrent repository\n\nPrior problem statements\n\n\nProduces 2–3 design options with:\n\nDetailed approaches\n\nCode samples\n\nMarkdown documentation\n\n\nScores options and makes a recommendation\n\nAlso advises on timing:\n\nDo it now vs. defer"
   },
   {
     "objectID": "a2d-deck.html#implement-workflow",
     "href": "a2d-deck.html#implement-workflow",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Implement Workflow",
     "text": "Implement Workflow\n\nThis is the workhorse of the system\n\nA [coder] agent is instructed to:\n\nBe concise and efficient with changes\n\nMinimize refactoring unless requested\n\nRespect existing patterns and decisions\n\nWrite appropriate unit tests\n\nProduce well-documented PRs with screenshots where helpful"
   },
   {
     "objectID": "a2d-deck.html#deployment-workflow",
     "href": "a2d-deck.html#deployment-workflow",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Deployment Workflow",
     "text": "Deployment Workflow\n\nUses a [deployment] agent with skills in:\n\nTerraform\nAzure CLI\nYAML\nGitHub Actions\n\n\nResponsibilities:\n\nInspect solution for deployment readiness\n\nCreate Terraform and supporting scripts\n\nEnsure environment consistency\n\nKeep secrets safe and managed\n\nEnable repeatable deployments"
   },
   {
     "objectID": "a2d-deck.html#workflow-status-mvp-view",
     "href": "a2d-deck.html#workflow-status-mvp-view",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Workflow Status (MVP View)",
     "text": "Workflow Status (MVP View)\n\n\n\n\n\n\n\n\nWorkflow\nStatus\nNotes\n\n\n\n\nPlanning\nIn Progress (~75%)\nEnhances work items; needs tighter verbosity and better respect for PR-approval gates.\n\n\nSolution Design\nIn Progress (~80%)\nCompares paths and recommends one; excellent docs but a bit verbose.\n\n\nSuggestion\nIn Progress (~60%)\nPrototype that recommends next work; needs refinement.\n\n\nUser Interface Design\nPlanning (~25%)\nWill integrate with Figma/UX MCPs.\n\n\nImplementation\nIn Progress (~90%)\nMost mature; produces concise, tested code with strong PRs.\n\n\nDeployment\nPlanning (~25%)\nGood scripts, needs stronger understanding of workflows and approvals."
   },
   {
     "objectID": "a2d-deck.html#methodology-definition",
     "href": "a2d-deck.html#methodology-definition",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Methodology Definition",
     "text": "Methodology Definition\n\nAs important as the technology itself\n\nA2D will define ceremonies similar to Agile, but with shorter cycles\n\nLikely better aligned with Kanban than strict sprints\n\nDaily flow typically:\n\nPlan – morning planning with agents\n\nDesign – refine approaches\n\nImplement – coding agents execute\n\nReview – humans review & approve\n\nDeploy – promote safely\n\nVerify – validate outcomes\n\n\nThen repeat"
   },
   {
     "objectID": "a2d-deck.html#the-human-role",
     "href": "a2d-deck.html#the-human-role",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "The Human Role",
     "text": "The Human Role\n\nHumans remain central:\n\nProvide context\nSet direction & priorities\nGive positive and negative feedback\n\nReview and approve all changes\n\n\nA2D is about augmenting, not replacing, the team"
   },
   {
     "objectID": "a2d-deck.html#risks",
     "href": "a2d-deck.html#risks",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Risks",
     "text": "Risks\n\nGitHub Copilot and MCP ecosystem are moving fast\n\nMany features are still in preview\n\nRegistries and servers are unstable; things break frequently\n\nGitHub keeps tight control over agents and currently:\n\nLimits coding agents largely to Anthropic Sonnet\n\n\nLicensing:\n\n$15–$30 USD per user per month today\n\nUnlikely to stay that low long-term\n\n\nAgent drift:\n\nSame inputs can produce slightly different outputs\n\nGovernance and guardrails are essential"
   },
   {
     "objectID": "a2d-deck.html#phased-approach",
     "href": "a2d-deck.html#phased-approach",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Phased Approach",
     "text": "Phased Approach\n\nStart as a services company while artifacts mature\n\nPackage mature artifacts as a subscription offering later\n\nAllow time for:\n\nMCP landscape to stabilize\n\nArchetypes & workflows to be battle-tested\n\n\nGenerate revenue while:\n\nBuilding & testing artifacts\n\nProving the CodeLantern MCP concept"
   },
@@ -317,7 +317,7 @@
   {
     "objectID": "a2d-deck.html#thank-you",
     "href": "a2d-deck.html#thank-you",
-    "title": "A2D – AI-Augmented Development",
+    "title": "A2D",
     "section": "Thank You",
     "text": "Thank You\nQuestions? Discussion?\n\nUse this slide to open Q&A and deeper technical or financial discussions depending on the audience."
   },
@@ -537,5 +537,12 @@
     "title": "A2D – AI-Augmented Development",
     "section": "Thank You",
     "text": "Thank You\nQuestions? Discussion?\n\nUse this slide to open Q&A and deeper technical or financial discussions depending on the audience."
+  },
+  {
+    "objectID": "a2d-deck.html#section",
+    "href": "a2d-deck.html#section",
+    "title": "A2D",
+    "section": "",
+    "text": "AI Augmented Development\nAI Assisted Development"
   }
 ]
